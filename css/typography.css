@@ -1,0 +1,56 @@
+h1,
+h2,
+h3,
+h4 {
+	line-height: 1.45;
+}
+h1 {
+	font-size: 32px;
+}
+h2 {
+	font-size: 24px;
+}
+h3 {
+	font-size: 20px;
+}
+h3:not(:last-child) {
+	margin-bottom: 8px;
+}
+h4 {
+	font-size: 18px;
+}
+
+.fs-big {
+	font-size: 18px;
+	line-height: 26px;
+}
+.fs-small {
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.text p {
+	margin-bottom: 15px;
+}
+.text ul {
+	margin-bottom: 15px;
+	list-style-position: inside;
+}
+.text ol {
+	padding-left: 20px;
+	margin-bottom: 15px;
+}
+.text ol>li {
+	margin-bottom: 15px;
+}
+.text img {
+	max-width: 100%;
+}
+
+a.no-underline {
+	text-decoration: none;
+}
+
+p + p {
+	margin-top: 10px;
+}

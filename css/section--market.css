@@ -1,0 +1,371 @@
+.dashboard-header .w-categories {
+    margin-left: 24px;
+}
+
+.process-share {
+    top:0;
+    padding:0;
+    overflow-y: auto;
+}
+
+.process-share-header {
+    background: #273545;
+    min-height: 250px;
+    color: #FFF;
+    padding: 36px 32px 32px 32px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.process-share-header__block {
+    margin-bottom: 20px;
+    width: 450px;
+}
+
+.process-share-header__anons {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 27px;
+    padding-right: 20px;
+}
+
+.process-share-header__thumb {
+    width: 270px;
+    align-self: center;
+    /* position: absolute;
+    top: 25px;
+    right: 34px; */
+    /*height: 200px;*/
+    /* background: #fff */
+    /* z-index: 999; */
+}
+
+.process-share-header__thumb > img {
+    width: 275px;
+    height: 275px;
+    border-radius: 4px;
+    border: 2px solid #e6e6e6;
+}
+
+
+.process-share-header__container {
+    width: 100%;
+}
+
+.process-share-header__unsupported {
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+
+.process-share-header__container button {
+    background: rgb(233, 77, 77);
+    border-radius: 6px;
+    margin: 0;
+    padding: 16px 32px;
+    font-size: 18px;
+}
+
+.process-share-header__container button.loading {
+    height: 56px;
+}
+
+.process-share-header__container button.success {
+    background-color: rgb(6, 185, 28);
+}
+.process-share-header__container button.success:hover {
+    background-color: rgb(24, 199, 46)!important;
+}
+
+.process-share-header__container button:hover {
+    background-color: rgb(226, 69, 69)!important;
+}
+
+.process-share-header__stats {
+    display: flex;
+    font-size: 14px;
+}
+
+.process-share-header__stats > div {
+    margin-right: 20px;
+}
+
+.process-share-header__elements {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.process-share-header__elements > div,
+.process-share-header__elements > i {
+    margin-right: 4px;
+}
+
+.process-share-header__elements > div._bold {
+    font-weight: bold;
+}
+
+
+
+.process-share-line {
+    background-color: #b1d5ff;
+    height: 0;
+}
+
+.process-share-body{
+    /* background: linear-gradient(42deg, #dfeeff 43%, #c4dfff); */
+    margin:32px;
+}
+
+.process-share-body__title{
+
+}
+
+.process-share-body__desc {
+    margin-bottom: 20px;
+}
+
+.process-share-body__images {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.process-share-body__images > img {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.image-view {
+    object-fit: cover;
+}
+
+.image-view._hover {
+    cursor: pointer;
+}
+.image-view._hover:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.image-view._normal {
+    height: 150px;
+    width: 150px;
+}
+
+.image-view._rectangle {
+    height: 120px;
+    width: 210px;
+}
+
+.image-view._small {
+    height: 148px;
+    width: 148px;
+}
+
+.image-view._free {
+    height: 100%;
+    width: 100%;
+}
+
+.market-categories {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.market-categories-item {
+    width: calc((100% - 40px)/2);
+    padding: 10px;
+    background-color: #fff;
+    margin: 0 20px 20px 0;
+    border-radius: 6px;
+    /* background: linear-gradient(42deg, #273545 43%, #273545); */
+    transition: "background" .2s;
+    color: #1276ED;
+}
+
+.market-categories-item__body {
+    cursor: pointer;
+    display: flex;
+    align-content: stretch;
+    padding: 10px;
+    height: 100%;
+}
+
+.market-categories-item:hover {
+    box-shadow: 0 4px 12px rgba(38, 39, 43, 0.16);
+    border-radius: 6px;
+}
+
+.market-categories-item__title {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+
+.market-categories-item__icon {
+    padding: 2px 28px 0 14px;
+    font-size: 32px;
+}
+
+.market-categories-item__description{
+    line-height: 22px;
+    font-size: 14px;
+    color: #8c8c8c;
+}
+
+/* .market-processes {
+
+} */
+
+.market-processes-item {
+    border-top: 1px solid #dedfe0;
+    display: flex;
+    padding: 20px 0 28px;
+    text-decoration: none;
+    color: #686f7a;
+}
+
+.market-processes-item:hover {
+    background-color: #fff;
+}
+
+.market-processes-item:last-child{
+    border-bottom: 1px solid #dedfe0;
+}
+
+.market-processes-item:first-child{
+    margin-top: 0;
+}
+
+.market-processes-item__thumb {
+    margin-left: 5px;
+    width: 220px;
+}
+
+.market-processes-item__title {
+    color: #26272B;
+    font-weight: 900;
+    font-size: 16px;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.market-processes-item__body {
+    margin-left: 16px;
+    line-height: 18px;
+    font-size: 14px;
+    width:100%;
+}
+
+.market-processes-item__info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.market-processes-item__info-item {
+    margin-right: 20px;
+}
+
+.mt8 {
+    margin-top: 8px!important;
+}
+
+.mt12 {
+    margin-top: 12px!important;
+}
+
+.category-tag {
+    background-color: #fbdb95;
+    border-radius: 25px;
+    padding: 4px 12px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: #686f7a;
+}
+
+.market-processes-item__info-item._dot::before{
+    /* content: '|';
+    font-size: 14px;
+    margin-right: 10px; */
+}
+
+
+.market-processes-item__description {
+     margin-top: 12px;
+}
+
+
+
+.market-proccess-page .page-close {
+    color: #fff;
+    background: none;
+}
+
+.market-proccess-page .page-close:hover::before {
+    color: #b5b5b5!important;
+}
+
+.process-share-body ol, .process-share-body ul {
+    padding-left: 50px;
+}
+
+.small-icon {
+    font-size: 14px;
+}
+
+.w-categories {
+	width: 370px !important;
+}
+
+@media screen and (max-width: 768px) {
+    .process-share-header__container > button {
+        padding: 16px 32px!important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .w-categories {
+        width: 327px !important;
+    }
+
+    .market-categories-item {
+        width: 100%;
+        margin: 0 2px 10px 0;
+    }
+
+
+    .market-processes-item {
+        flex-direction: column;
+    }
+
+    .market-processes-item__body {
+        margin-left: 5px;
+    }
+
+    .page-content.process-share {
+        padding: 0;
+        bottom: 0;
+    }
+
+    .page .page-content.process-share{
+        bottom: 0;
+    }
+
+    .process-share-header {
+        padding: 40px 16px 20px 16px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .page .page-content.process-share{
+        top: 0;
+    }
+}

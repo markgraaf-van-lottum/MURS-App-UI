@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Просмотр процесса</title>
+	<base href="../../">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+<div class="main-container" id="root">
+	<!-- Sidebar -->
+	<aside>
+		<!-- Закругленные края -->
+		<div class="edge--top"></div>
+		<div class="edge--bottom"></div>
+
+		<nav class="menu-button"></nav>
+
+		<a class="logo"></a>
+
+		<!-- Меню -->
+		<nav class="menu">
+			<a href="#" class="with-submenu">Продажа</a>
+			<!-- подменю -->
+			<div class="submenu">
+				<a href="learning.html">Обучение</a>
+				<a href="rating.html" class="active">Рейтинг</a>
+				<a href="#">Тренировки</a>
+				<a href="#">Скрипты</a>
+			</div>
+			<a href="#" class="with-submenu">Вовлеченность</a>
+			<a href="#">Команда</a>
+			<a href="#">Сотрудники</a>
+			<a href="#">Клиенты</a>
+			<a href="#">Настройки</a>
+		</nav>
+
+		<div class="service-settings-progress-bar">
+			<div class="progress-bar__text">Вы завершили 1 шаг из 4 по настройке системы. Продолжайте в том же духе!</div>
+			<div class="progress-bar__bar">
+				<div class="progress-bar__fill" style="width: 25%;"></div>
+			</div>
+		</div>
+
+		<footer>
+			<a href="#" class="icon--logout">Выход</a>
+			<a href="#" class="goto-learning">?</a>
+		</footer>
+	</aside>
+
+	<!-- Основное содержимое -->
+	<main>
+		<div class="dashboard">
+			<div class="dashboard-header">
+				<h1>Процессы</h1>
+				<i class="icon--add-solid"></i>
+				<i class="icon__telegram"></i>
+				
+				<input type="text" class="search-bar" value="" placeholder="Поиск">
+
+				<div class="switcher switcher--processes-layout"><input type="radio" name="sw" id="tile-view" value="tiles" checked><label for="tile-view"></label><input type="radio" name="sw" id="list-view" value="table" ><label for="list-view"></label></div>
+			</div>
+
+			<!-- Добавлять к dashboard-tiles класс table-list-view для смены раскладки -->
+			<div class="dashboard-tiles  ">
+
+				<div class="widget widget-process">
+					<a href="" class="widget-title">ScrumMeeting</a>
+					<div class="tags-block">
+						<div class="tag">Остановлен</div>
+					</div>
+					<div class="widget-actions">
+						<i class="icon--copy"></i>
+						<i class="icon--edit"></i>
+						<i class="icon--trash"></i>
+					</div>
+				</div>
+
+				<div class="widget widget-training">
+					<a href="" class="widget-title">Performance Review Сабирянов Роберт</a>
+					<div class="tags-block">
+						<div class="tag  success">Запущен</div>
+					</div>
+					<div class="widget-actions">
+						<i class="icon--copy"></i>
+						<i class="icon--edit"></i>
+						<i class="icon--trash"></i>
+					</div>
+				</div>
+
+				<div class="widget widget-process">
+					<a href="" class="widget-title">ScrumMeeting</a>
+					<div class="tags-block">
+						<div class="tag  success">На паузе</div>
+					</div>
+					<div class="widget-actions">
+						<i class="icon--copy"></i>
+						<i class="icon--edit"></i>
+						<i class="icon--trash"></i>
+					</div>
+				</div>
+
+				<div class="widget widget-process">
+					<a href="" class="widget-title">ScrumMeeting</a>
+					<div class="tags-block">
+						<div class="tag  success">Выполнен</div>
+					</div>
+					<div class="widget-actions">
+						<i class="icon--copy"></i>
+						<i class="icon--edit"></i>
+						<i class="icon--trash"></i>
+					</div>
+				</div>
+
+				<div class="widget widget-training">
+					<a href="" class="widget-title">Performance Review Сабирянов Роберт Performance Review Сабирянов Роберт </a>
+					<div class="tags-block">
+						<div class="tag  success">Запущен</div>
+					</div>
+					<div class="widget-actions">
+						<i class="icon--copy"></i>
+						<i class="icon--edit"></i>
+						<i class="icon--trash"></i>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</main>
+
+	<!-- СЛОЙ -->
+	<div class="page  open  page--view">
+		<div class="page-close icon--close"></div>
+		
+		<div class="page-content">
+
+			<div class="page-header">
+				<h1 class="page-title">Эссе сотрудников для Performance Review Эссе сотрудников для Performance Review</h1>
+				<div class="status  tags-block">
+					<div class="tag">Остановлен</div>
+					<!-- <div class="tag  success">Запущен</div> -->
+					<!-- <div class="tag  success">Процесс будет запущен 29 окт</div> -->
+				</div>
+			</div>
+
+			<!-- <p class="page-description">Что делал вчера, сегодня и какие есть проблемы</p> -->
+
+			<!-- Управление процессом -->
+			<div class="process-controls">
+				<button>Запустить</button>
+				<!-- <button class="light">Остановить</button> -->
+				<!-- <button class="light">На паузу</button> -->
+				<button class="clean  icon--settings">Настроить</button>
+				<button class="clean  icon--history">История</button>
+			</div>
+			
+			<!-- Параметры Процесса -->
+			<div class="params-container">
+				<table class="process-params">
+					<tr>
+						<td>Шаблон</td>
+						<td>Scrum Meeting</td>
+					</tr>
+					<tr>
+						<td>Бот</td>
+						<td>Test Robert's bot</td>
+					</tr>
+					<tr>
+						<td>Начало</td>
+						<td>28.10.2018 18:27</td>
+					</tr>
+					<tr>
+						<td>Повтор</td>
+						<td>Нет</td>
+					</tr>
+					<tr>
+						<td>Напоминание</td>
+						<td>Нет</td>
+					</tr>
+				</table>
+			</div>
+
+			<!-- Этап / Stage -->
+			<!-- Свернутое состояние (класс minimized) -->
+			<div class="widget  stage  minimized">
+				<div class="widget-header">
+					<a href="" class="widget-title">Этап 1 - ScrumMeet Этап 1 - ScrumMeet </a>
+					<div class="stage-info">
+						<div class="stage-status  tags-block">
+							<!-- <div class="tag  success">Запущен</div> -->
+							<div class="tag">Остановлен</div>
+						</div>
+						<i class="icon--dropdown"></i>
+					</div>
+				</div>
+
+				<!-- <p class="widget-description">Что делал вчера, сегодня и какие есть проблемы</p> -->
+				
+				<!-- Параметры Этапа -->
+				<table class="stage-params">
+					<tr>
+						<td>Диалог</td>
+						<td>Meetup Dialog</td>
+					</tr>
+					<tr>
+						<td>Запуск на</td>
+						<td>Manager</td>
+					</tr>
+					<tr>
+						<td>Время действия</td>
+						<td>2ч</td>
+					</tr>
+				</table>
+
+				<!-- Действия для Этапа -->
+				<div class="stage-actions">
+					<button class="clean  small  icon--edit">Редактировать</button>
+					<button class="clean  small  icon--bell">Настроить уведомления</button>
+					<button class="clean  small  icon--trash">Удалить</button>
+				</div>
+			</div>
+
+			<!-- Этап / Stage -->
+			<!-- Развернутое состояние -->
+			<div class="widget  stage">
+				<div class="widget-header">
+					<a href="" class="widget-title">Этап 2 - ScrumMeet</a>
+					<div class="stage-info">
+						<div class="stage-status  tags-block">
+							<!-- <div class="tag  success">Запущен</div> -->
+							<div class="tag">Остановлен</div>
+						</div>
+						<i class="icon--dropdown"></i>
+					</div>
+				</div>
+
+				<!-- <p class="widget-description">Что делал вчера, сегодня и какие есть проблемы</p> -->
+				
+				<!-- Параметры Этапа -->
+				<table class="stage-params">
+					<tr>
+						<td>Диалог</td>
+						<td>Meetup Dialog Meetup Dialog Meetup Dialog Meet </td>
+					</tr>
+					<tr>
+						<td>Запуск на</td>
+						<td>Manager</td>
+					</tr>
+					<tr>
+						<td>Время действия этапа</td>
+						<td>2ч</td>
+					</tr>
+				</table>
+
+				<!-- Действия для Этапа -->
+				<div class="stage-actions">
+					<button class="clean  small  icon--edit">Редактировать</button>
+					<button class="clean  small  icon--bell">Настроить уведомления</button>
+					<button class="clean  small  icon--trash">Удалить</button>
+				</div>
+			</div>
+
+			<button class="clean  icon--add  add-stage">Добавить этап</button>
+		</div>
+	</div>
+
+</div>
+
+<!-- prev/next screen -->
+<a class="other-screens-link prev" href="html/dialogues/dialogue--page--question-edit.html"></a>
+<a class="other-screens-link next" href="html/settings/page--settings--bots.html"></a>
+
+<script type="text/javascript">
+	document.querySelector('.page-close').onclick = function () {document.querySelector('.page').style.display = "none";};
+</script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

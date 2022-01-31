@@ -1,0 +1,245 @@
+.gamification .dashboard-header button {
+	margin-top: 0;
+}
+.gamification .dashboard-header .icon--add-solid {
+	margin-right: 20px;
+}
+
+.form .row-gamification td {
+	padding-top: 30px;
+	border-top: 1px solid #eee;
+}
+.form .row-gamification td:first-child {
+	padding-top: 50px;
+	position: relative;
+}
+
+.form--achievement .earn-limit {
+	width: 120px;
+}
+.form--achievement .criterion-tree {
+	margin-top: 0;
+}
+.form--achievement .label-full {
+	padding-bottom: 20px;
+}
+
+.criterion-rule .input-group {
+	display: flex;
+}
+.criterion-rule .input-group-item + .input-group-item {
+	margin-left: 20px;
+}
+.criterion-rule .input-group-item>* {
+	width: 100%;
+}
+.criterion-rule .condition,
+.criterion-rule .period {
+	max-width: 400px;
+}
+.criterion-rule .operator {
+	width: 80px;
+}
+.criterion-rule .threshold {
+	flex-grow: 2;
+}
+.criterion-rule .period-count {
+	flex-grow: 2;
+}
+.criterion-rule .period-type {
+	width: 135px;
+}
+.criterion-rule .multiplicity {
+	width: 80px;
+}
+
+/* Выбор оператора при добавлении условия (геймификация - критерии) */
+.criterion-rule .operator .select__menu-list,
+.criterion-rule .period .select__menu-list {
+	padding: 2px 0;
+}
+.criterion-rule .operator .select__option,
+.criterion-rule .period .select__option {
+	padding: 10px 16px;
+}
+.criterion-rule .operator .select__option::before,
+.criterion-rule .period .select__option::before {
+	display: none;
+}
+
+/* Criterion tree form field */
+.criterion-tree {
+	margin: 10px 0 20px;
+}
+.criterion-tree > .criterion-group {
+	border: 0;
+	padding: 0;
+}
+.criterion-tree > .criterion-group > .criterion-group {
+	margin-left: 0;
+}
+.criterion-tree .switcher {
+	margin-bottom: 0;
+}
+.criterion-tree .switcher input + label {
+	min-width: 60px;
+}
+.criterion-tree .type-switcher input + label {
+	min-width: 140px;
+}
+.criterion-tree > .criterion-group > .actions {
+	margin-top: 0px;
+}
+
+.criterion-group {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid #eaedf4;
+	border-radius: 6px;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+.criterion-group:last-child {
+	margin-bottom: 0;
+}
+.criterion-group > .switcher {
+	margin: 0 0 20px;
+}
+.criterion-group > .actions {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-bottom: -8px;
+}
+.criterion-group > .actions > button {
+	margin-top: 0;
+}
+
+.criterion-rule {
+	align-items: center;
+	margin-bottom: 20px;
+}
+.criterion-rule:last-child {
+	margin-bottom: 0;
+}
+.criterion-rule .relation {
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.criterion-rule .criterion-id {
+	flex-grow: 2;
+	background: #f9f9f9;
+    border-radius: 8px;
+    padding: 12px 18px;
+    border: 2px dashed #eaedf4;
+}
+.criterion-rule .criterion-id .basic-single {
+	width: 100%;
+}
+.criterion-rule .remove {
+	width: 36px;
+	text-align: right;
+	position: absolute;
+    top: 10px;
+    right: 5px;
+}
+.criterion-rule .remove > button {
+	margin-top: 0;
+}
+
+/* Criterion tree view */
+.criterion-tree-view {
+	margin: 30px 0;
+}
+.criterion-tree-view .row {
+	display: flex;
+	align-items: center;
+}
+.criterion-tree-view .row + .row {
+	margin-top: 20px;
+}
+.criterion-tree-view .row .relation {
+	margin-right: 20px;
+}
+.criterion-tree-view .group {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid #eaedf4;
+	border-radius: 6px;
+	margin-bottom: 20px;
+	padding: 20px;
+	flex-grow: 2;
+}
+.criterion-tree-view .group:last-child {
+	margin-bottom: 0;
+}
+.criterion-tree-view .group > .relation {
+	margin: 0 0 20px;
+}
+.criterion-tree-view > .group {
+	border: 0;
+	padding: 0;
+}
+.criterion-tree-view .relation>span {
+	display: inline-block;
+	padding: 4px 12px;
+	background-color: #eaedf4;
+	font-weight: bold;
+	font-size: 13px;
+	border-radius: 4px;
+	min-width: 40px;
+	text-align: center;
+}
+
+.criterion-tree-view .rule {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	flex-grow: 2;
+}
+.criterion-tree-view .rule:last-child {
+	margin-bottom: 0;
+}
+.criterion-tree-view .rule .relation {
+	margin-right: 20px;
+}
+.criterion-tree-view .rule .name {
+	flex-grow: 2;
+	margin-right: 20px;
+}
+.criterion-tree-view .rule .name .icon--edit {
+	margin-left: 10px;
+	cursor: pointer;
+	color: rgba(0, 0, 0, 0.25);
+	display: none;
+}
+.criterion-tree-view .rule:hover .name .icon--edit {
+	display: inline;
+}
+
+/* Achievements */
+.employee-achievements .achievement {
+	display: inline-block;
+	margin: 0 20px 20px 0;
+}
+.employee-achievements .achievement > a {
+	display: block;
+	width: 32px;
+	height: 32px;
+}
+.employee-achievements .achievement .icon {
+	cursor: pointer;
+}
+.employee-achievements h3 {
+	margin-bottom: 15px;
+}
+.employee-achievements .list {
+	margin-bottom: -20px;
+	min-height: 52px;
+}
+.employee-achievements .box_loading {
+	margin-bottom: -20px;
+	height: 52px;
+}

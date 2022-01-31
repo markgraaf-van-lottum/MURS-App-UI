@@ -1,0 +1,141 @@
+.StripeElement {
+	width: 400px;
+	padding: 12px 16px;
+    background: #fff;
+    border: 1px solid #CED2DC;
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: inherit;
+    font: inherit;
+    vertical-align: middle;
+}
+
+.StripeElement--focus {
+	box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+	border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+	background-color: #fefde5 !important;
+}
+
+.subscription .icon--trash,
+.subscription .icon--play {
+	margin-left: auto;
+}
+
+.subscription .params-container {
+	margin-top: 0;
+}
+table.subscription-params td {
+	line-height: 25px;
+}
+table.subscription-params td:not(:last-child) {
+	padding-right: 24px;
+}
+table.subscription-params td:first-child {
+	width: 160px;
+	color: #8d8f9a;
+}
+.subscription .actions {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.subscription__update {
+	margin-top: 40px;
+}
+.subscription__update h4 {
+	margin-bottom: 10px;
+}
+.subscription .call-me {
+	text-align: center;
+}
+
+.page--settings .ant-tabs-content {
+	overflow: auto;
+	height: calc(100vh - 240px);
+}
+.page--settings .ant-tabs .ant-tabs-tabpane-active {
+	height: 100%;
+}
+
+.page--settings .page-header .company {
+	padding-top: 5px;
+}
+
+.billing-history {
+	margin-top: 60px;
+}
+
+.billing-history h4 {
+	margin-bottom: 10px;
+}
+
+/* Integrations */
+.page--settings .api-key {
+	margin-bottom: 40px;
+}
+.page--settings .api-key .value {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	padding: 10px 20px;
+	text-align: center;
+	max-width: 500px;
+	font-size: 18px;
+	font-weight: bold;
+	border: 2px dashed #999;
+	background: #F5F7FB;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.page--settings .api-key .value:hover {
+	border-color: #000;
+	background: #eaedf4;
+}
+.page--settings .webhooks .table-widget {
+	margin-top: 20px;
+}
+.page--settings .box_loading {
+	min-height: 100px;
+}
+
+.plans {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+}
+.plans .plan {
+	margin: 0 20px 20px 0;
+	padding: 15px 20px;
+	border: 3px solid #eef0f6;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 45%;
+}
+.plans .plan:hover {
+	border-color: #ccc;
+}
+.plans .plan.selected,
+.plans .plan.selected:hover {
+	border-color: #1890ff;
+}
+.plans .plan .name {
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.plans .plan .price {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 36px;
+	vertical-align: bottom;
+}
+.plans .plan .price>span {
+	font-size: 24px;
+	font-weight: 600;
+}

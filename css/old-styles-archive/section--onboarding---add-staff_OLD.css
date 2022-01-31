@@ -1,0 +1,326 @@
+header.onboarding {
+	background: none;
+	box-shadow: none;
+	z-index: 1;
+}
+header.onboarding .controls > div::before {
+	font-size: 24px;
+}
+main.onboarding {
+	top: 0;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.onboarding h1.tools-intro {
+	margin-bottom: 14px;
+	font-size: 60px;
+	color: #1276ED;
+}
+.onboarding .second-line {
+	margin-bottom: 52px;
+	font-size: 32px;
+	line-height: 42px;
+}
+.onboarding .check-list {
+	width: 880px;
+	margin: 0 auto;
+	padding-left: 100px;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.onboarding .check-list .item {
+	margin: 18px 0;
+	padding-right: 32px;
+	width: 50%;
+	text-align: left;
+	font-size: 20px;
+	font-weight: bold;
+}
+.onboarding .check-list .item::before {
+	content: "\63";
+	margin-right: 16px;
+	font-size: 18px;
+	color: #FFF;
+	background: #F4C874;
+	border: 7px solid #F4C874;
+	border-radius: 50%;
+	vertical-align: -2px;
+}
+.onboarding button {
+	display: inline-block;
+}
+.onboarding a.button.detailed,
+.onboarding button.detailed {
+	-ms-align-self: center;
+	align-self: center;
+	font-size: 20px;
+	padding: 20px 36px;
+	margin-top: 54px;
+}
+
+/*								*/
+/*		СЛАЙДЕР		*/
+/*								*/
+.onboarding .slider {
+	left: calc(50% - 860px/2);
+	transition: transform .5s ease-in-out;
+}
+
+.onboarding .slider .slide {
+	-webkit-flex: 0 0 800px;
+	-moz-flex: 0 0 800px;
+	-ms-flex: 0 0 800px;
+	-o-flex: 0 0 800px;
+	flex: 0 0 800px;
+	margin: 0 30px;
+}
+
+/*		Смена слайдов	*/
+.onboarding .slider.slide-2_active {
+	transform: translateX(-860px);
+}
+.onboarding .slider.slide-3_active {
+	transform: translateX(-1720px);
+}
+.onboarding .slider.slide-4_active {
+	transform: translateX(-2580px);
+}
+.onboarding .slider.slide-5_active {
+	transform: translateX(-3440px);
+}
+.onboarding .slider.slide-6_active {
+	transform: translateX(-4300px);
+}
+
+/*		Размытие неактивных слайдов	*/
+.onboarding .slider.slide-1_active .slide:not(.slide-1),
+.onboarding .slider.slide-2_active .slide:not(.slide-2),
+.onboarding .slider.slide-3_active .slide:not(.slide-3),
+.onboarding .slider.slide-4_active .slide:not(.slide-4),
+.onboarding .slider.slide-5_active .slide:not(.slide-5),
+.onboarding .slider.slide-6_active .slide:not(.slide-6) {
+	opacity: .2;
+	filter: blur(5px);
+}
+
+/*		Содержимое слайда		*/
+.onboarding .slider h1 {
+	font-size: 60px;
+}
+.onboarding .slider .slide__alter-heading {
+	margin-bottom: 44px;
+	font-size: 24px;
+	color: #1276ED;
+}
+.onboarding .slider .slide__text {
+	margin: auto;
+	font-size: 20px;
+	line-height: 32px;
+}
+.onboarding .slider .slide__text + .slide__text {
+	margin-top: 24px;
+}
+
+/*		Слайд 1, 5 	*/
+.onboarding .slider .slide-1 .slide__text,
+.onboarding .slider .slide-5 .slide__text {
+	width: 480px;
+}
+/*		Слайд 2-3 	*/
+.onboarding .slider .slide-2 .slide__text,
+.onboarding .slider .slide-3 .slide__text {
+	width: 640px;
+}
+/*		Слайд 5 	*/
+.onboarding .slider .slide-5 .slide__alter-heading {
+	font-size: 60px;
+	font-weight: bold;
+}
+/*		Слайд 6 	*/
+.onboarding .slider .slide-6 .slide__text {
+	width: 560px;
+}
+.onboarding .slider .slide-6 .and-now {
+	margin-top: 36px;
+	font-style: italic;
+	font-size: 20px;
+	color: #8D8F9A;
+}
+.onboarding .slider .slide-6 .button.detailed {
+	margin-top: 16px;
+}
+.onboarding .slide-6_active + .slider__ctrl .next-slide {
+	display: none;
+}
+
+/*		Индикаторы (точки)	*/
+.onboarding .slider__ctrl .dot-indicators {
+	position: fixed;
+	top: 22px;
+	left: calc(50%);
+	transform: translateX(-50%);
+	font-size: 0;
+	z-index: 2;
+}
+.onboarding .slider__ctrl .dot-indicators i {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #CED2DC;
+	transition: background .5s;
+	cursor: pointer;
+}
+.onboarding .slider__ctrl .dot-indicators i:not(:last-of-type) {
+	margin-right: 12px;
+}
+.onboarding .slide-1_active + .slider__ctrl .dot-indicators i:nth-of-type(1),
+.onboarding .slide-2_active + .slider__ctrl .dot-indicators i:nth-of-type(2),
+.onboarding .slide-3_active + .slider__ctrl .dot-indicators i:nth-of-type(3),
+.onboarding .slide-4_active + .slider__ctrl .dot-indicators i:nth-of-type(4),
+.onboarding .slide-5_active + .slider__ctrl .dot-indicators i:nth-of-type(5),
+.onboarding .slide-6_active + .slider__ctrl .dot-indicators i:nth-of-type(6) {
+	background: #4F7BEB;
+}
+
+/*		Кнопка перехода к сл. слайду	*/
+a.button.next-slide {
+	position: fixed;
+	bottom: 10vh;
+	left: calc(50% - 64px/2);
+	display: inline-block;
+	min-width: auto;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	padding: 13px 0 0 4px;
+}
+a.button.next-slide::before {
+	font-size: 36px;
+}
+
+
+/*																		*/
+/*		ФОРМА - регистрация сотрудников		*/
+/*																		*/
+
+.onboarding .reg-staff {
+	width: 640px;
+	height: 70vh;
+	min-height: 580px;
+	max-height: 640px;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	padding: 24px 0;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+.onboarding .reg-staff h1 {
+	margin-bottom: 24px;
+}
+
+.onboarding .reg-staff .widget {
+	display: block;
+	margin-bottom: auto;
+	padding: 32px 48px;
+	text-align: left;
+}
+.onboarding .reg-staff .copy-link-btn {
+	position: absolute;
+	top: 18px;
+	right: 48px;
+	padding: 6px 22px;
+}
+.onboarding .reg-staff .devider {
+	height: 2px;
+	margin: 24px 0;
+	background: #EAEDF4;
+}
+.onboarding .reg-staff h4 {
+	margin: 32px 0 12px;
+}
+.onboarding .reg-staff .icon--checkmark {
+	margin-bottom: 8px;
+}
+.onboarding .reg-staff .icon--checkmark::before {
+	margin-right: 12px;
+}
+.onboarding .reg-staff .numbered-list p::before {
+	color: #1276ED;
+	font-weight: bold;
+}
+.onboarding .reg-staff .numbered-list p:nth-child(1)::before {
+	content: '1. ';
+}
+.onboarding .reg-staff .numbered-list p:nth-child(2)::before {
+	content: '2. ';
+}
+.onboarding .reg-staff .numbered-list p:nth-child(3)::before {
+	content: '3. ';
+}
+.onboarding .reg-staff .button.detailed {
+	display: inline-block;
+	margin-top: 8px;
+}
+
+/*===============*/
+.onboarding .add-staff .widget button.light {
+	min-width: 130px;
+	margin-top: 8px;
+}
+.onboarding .add-staff .widget button.light:not(:last-child) {
+	margin-bottom: 24px;
+}
+.onboarding .add-staff .widget label {
+	margin-bottom: 16px;
+	font-size: 14px;
+	color: #8D8F9A;
+}
+.onboarding .add-staff .widget input {
+	display: block;
+	width: 260px;
+}
+/*		Сотрудники		*/
+.onboarding .add-staff .widget .staff-item {
+	width: 100%;
+}
+
+.onboarding .add-staff .widget .staff-item + .staff-item {
+	margin-top: 8px;
+}
+.onboarding .add-staff .widget .staff-item .full-name {
+	font-weight: bold;
+}
+.onboarding .add-staff .widget .staff-item .job {
+	color: #8D8F9A;
+	margin: 0 20px 0 12px;
+}
+.onboarding .add-staff .widget .staff-item i {
+	color: #CED2DC;
+	cursor: pointer;
+}
+
+.onboarding .add-staff .fs-small {
+	color: #8D8F9A;
+	font-weight: normal;
+}
+.onboarding .add-staff a.button.detailed {
+	margin-top: 24px;
+}
+.onboarding .add-staff .button.disabled {
+	opacity: .24;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	pointer-events: none;
+}

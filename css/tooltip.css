@@ -1,0 +1,122 @@
+/*      ПОДСКАЗКИ / TOOLTIPS    */
+.tooltip {
+	visibility: visible;
+	position: absolute;
+	display: block;
+	margin-right: -1000px;
+	margin-bottom: -1000px;
+	letter-spacing: normal;
+	font-weight: 400;
+	font-size: 14px;
+	color: #fff !important;
+	background: #1276ED;
+	border-radius: 6px;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	z-index: 6000;
+}
+.tooltip:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	pointer-events: none;
+}
+.tooltip.in {
+	opacity: 1;
+	-ms-filter: none;
+	filter: none;
+}
+.tooltip.fade {
+	-webkit-animation: fadeIn .2s;
+	-moz-animation: fadeIn .2s;
+	-o-animation: fadeIn .2s;
+	-ms-animation: fadeIn .2s;
+	animation: fadeIn .2s;
+}
+.tooltip-arrow {display: none;}
+
+.tooltip-inner {
+	padding: 9px 12px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: auto;
+	max-width: 270px;
+	line-height: 1.3;
+	text-decoration: none;
+	font-weight: 400;
+	font-style: normal;
+	color: inherit !important;
+	cursor: default;
+}
+
+.tooltip.right:after {border-right-color: #1276ED;}
+.tooltip.top:after {border-top-color: #1276ED;}
+.tooltip.left:after {border-left-color: #1276ED;}
+.tooltip.bottom:after {border-bottom-color: #1276ED;}
+
+
+/* Ошибка */
+.tooltip.error {background-color: #D82B36;}
+.tooltip.error.right:after {border-right-color: #D82B36;}
+.tooltip.error.top:after {border-top-color: #D82B36;}
+.tooltip.error.left:after {border-left-color: #D82B36;}
+.tooltip.error.bottom:after {border-bottom-color: #D82B36;}
+
+/* Расположение */
+.tooltip.right {margin-left: 10px;}
+
+.tooltip.right:after,
+.tooltip.right:before {
+	right: 100%;
+	top: 50%;
+}
+.tooltip.right:after {margin-top: -7px;}
+.tooltip.top {margin-top: -7px;}
+
+.tooltip.top:after,
+.tooltip.top:before {
+	top: 100%;
+	left: 50%;
+}
+.tooltip.top:after {margin-left: -7px;}
+.tooltip.left {margin-left: -10px;}
+
+.tooltip.left:after,
+.tooltip.left:before {
+	left: 100%;
+	top: 50%;
+}
+.tooltip.left:after {margin-top: -7px;}
+.tooltip.bottom {margin-top: 7px;}
+
+.tooltip.bottom:after,
+.tooltip.bottom:before {
+	bottom: 100%;
+	left: 50%;
+}
+.tooltip.bottom:after {margin-left: -7px;}
+
+/* rechart tooltip */
+.recharts-default-tooltip {
+	z-index: 10;
+	margin: 0px;
+	padding: 10px;
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(204, 204, 204);
+	white-space: nowrap;
+}
+.recharts-default-tooltip ul li {
+	list-style: none;
+	font-size: 14px;
+	line-height: 22px;
+}
+.recharts-default-tooltip .recharts-tooltip-item-value {
+	font-weight: bold;
+}
+.recharts-default-tooltip .recharts-tooltip-item-total {
+	margin-top: 12px;
+}

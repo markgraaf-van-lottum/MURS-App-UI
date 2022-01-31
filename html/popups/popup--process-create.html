@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Создайте процесс</title>
+	<base href="../../">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+<div class="main-container" id="root">
+	<!-- Основное содержимое -->
+	<main>
+		<div class="dashboard">
+			<div class="dashboard-header">
+				<h1>Процессы</h1>
+				<i class="icon--add-solid"></i>
+				
+				<input type="text" class="search-bar" value="" placeholder="Поиск">
+				<input type="text" value="{ФИЛЬТР процессов}">
+				<input type="text" value="{ФИЛЬТР статусов}">
+
+				<div class="switcher  switcher--processes-layout">
+					<input type="radio" name="sw" id="tile-view" checked>
+					<label for="tile-view"></label>
+					<input type="radio" name="sw" id="list-view">
+					<label for="list-view"></label>
+				</div>
+			</div>
+
+			<!-- Добавлять к dashboard-tiles класс table-list-view для смены раскладки -->
+			<div class="dashboard-tiles">
+
+				<div class="widget">
+					<a href="" class="widget-title">ScrumMeeting</a>
+					<div class="tags-block">
+						<div class="tag  success">Запущен</div>
+					</div>
+					<div class="widget-actions">
+						<i class="icon--copy"></i>
+						<i class="icon--edit"></i>
+						<i class="icon--trash"></i>
+					</div>
+				</div>
+
+				<div class="widget">
+					<a href="" class="widget-title">Performance Review Сабирянов Роберт</a>
+					<div class="tags-block">
+						<div class="tag  success">Запущен</div>
+					</div>
+					<div class="widget-actions">
+						<i class="icon--copy"></i>
+						<i class="icon--edit"></i>
+						<i class="icon--trash"></i>
+					</div>
+				</div>
+
+				<div class="widget">
+					<a href="" class="widget-title">ScrumMeeting</a>
+					<div class="tags-block">
+						<div class="tag  success">Запущен</div>
+					</div>
+					<div class="widget-actions">
+						<i class="icon--copy"></i>
+						<i class="icon--edit"></i>
+						<i class="icon--trash"></i>
+					</div>
+				</div>
+
+				<div class="widget">
+					<a href="" class="widget-title">ScrumMeeting</a>
+					<div class="tags-block">
+						<div class="tag  success">Запущен</div>
+					</div>
+					<div class="widget-actions">
+						<i class="icon--copy"></i>
+						<i class="icon--edit"></i>
+						<i class="icon--trash"></i>
+					</div>
+				</div>
+
+				<div class="widget">
+					<a href="" class="widget-title">Performance Review Сабирянов Роберт Performance Review Сабирянов Роберт </a>
+					<div class="tags-block">
+						<div class="tag  success">Запущен</div>
+					</div>
+					<div class="widget-actions">
+						<i class="icon--copy"></i>
+						<i class="icon--edit"></i>
+						<i class="icon--trash"></i>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</main>
+
+	<!-- Попап -->
+	<div class="ReactModalPortal">
+		<div class="ReactModal__Overlay  ReactModal__Overlay--after-open  popup_overlay">
+			<div class="ReactModal__Content  ReactModal__Content--after-open  popup_table" tabindex="-1" role="dialog" aria-label="">
+				<div class="popup_cell">
+					<div class="popup_layer  popup--process-create">
+						<span class="popup_close  icon--close"></span>
+						<h1>Создайте процесс</h1>
+
+						<!-- Плитки -->
+						<div class="popup-tiles">
+							<div class="tile  icon__text-data">
+								<h2>Performance Review</h2>
+								<p>оценка эффективности сотрудника, обсуждение результатов за прошедший период</p>
+							</div>
+							<div class="tile  icon__speech-bubble">
+								<h2>Scrum Meeting</h2>
+								<p>ежедневное мероприятие, нацеленное на подведение итогов прошедшего дня, организацию планов на текущий день, обсуждение проблем, мешающих достижению целей команды</p>
+							</div>
+							<div class="tile  icon__positive-negative">
+								<h2>Индекс счастья</h2>
+								<p>инструмент повышения удовлетворенности сотрудника условиями труда</p>
+							</div>
+							<div class="tile  icon__positive-negative  unavailable">
+								<h2>Ретроспектива</h2>
+								<p>периодическое мероприятие, для запуска самоорганизующего процесса улучшения в команде</p>
+							</div>
+							<div class="tile  icon__positive-negative  unavailable">
+								<h2>Найм сотрудника</h2>
+								<p>автоматизация рутинных операций HR по первичному отбору кандидатов</p>
+							</div>
+							<div class="tile  icon__text-data">
+								<h2>Тренировка</h2>
+								<p>Ежедневные тренировки по скриптам общения с клиентам отточат мастерство сотрудников</p>
+							</div>
+							<div class="tile  icon__plus">
+								<h2>Произвольный процесс</h2>
+								<p>вы уже мастер для создания собственного процесса!!! Так сделайте это!!!</p>
+							</div>
+						</div>
+					</div>
+					<div class="popup_backdrop"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- prev/next screen -->
+<a class="other-screens-link prev" href="html/onboarding/onboarding_slides.html"></a>
+<a class="other-screens-link next" href="html/ui-kit.html"></a>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

@@ -1,0 +1,418 @@
+/*    ПРОЦЕССЫ     */
+
+/*		Подсказка для создания 1-го процесса	*/
+.dashboard-header .tooltip__create-1-process {
+	content: '';
+	position: absolute;
+	top: 55px;
+	left: 200px;
+	width: 444px;
+	padding: 55px 0 0 105px;
+	line-height: 22px;
+	color: #8D8F9A;
+	background: url(../img/dashed-arrow.svg) 0 0 no-repeat;
+}
+.dashboard-header .tooltip__create-1-process .title {
+	margin-bottom: 12px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/*		Параметры Этапа	*/
+table.stage-params {
+	margin-top: 10px;
+}
+table.stage-params td:first-child {
+	width: 180px;
+	font-size: 14px;
+	color: #61636c;
+}
+table.stage-params td:not(:last-child),
+table.process-params td:not(:last-child) {
+	padding-right: 20px;
+}
+table.stage-params a {
+	text-decoration: none;
+    color: #1276ED;
+    font-weight: bold;
+}
+
+/*		Таблица "Параметры процесса / сотрудника"	*/
+.params-container {
+	margin-top: 24px;
+	padding: 20px 32px 16px;
+	font-size: 14px;
+	background-color: #f5f7fb;
+	border-radius: 6px;
+}
+table.staff-params {
+	width: calc(100% - 130px);
+	table-layout: fixed;
+}
+table.staff-params td {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+table.staff-params td:first-child {
+	width: 150px;
+	color: #8d8f9a;
+}
+table.process-params td:first-child {
+	width: 110px;
+	color: #8d8f9a;
+}
+.staff-params-edit,
+.process-params-edit {
+	position: absolute;
+	top: 6px;
+	right: 20px;
+}
+
+button.clean.icon--trash {
+	color: #d82b36;
+}
+button.clean.icon--trash:hover {
+	color: #e67077;
+}
+button.clean.icon--trash.disabled {
+	color: #CED2DC;
+}
+.page-content button.add-stage {
+	margin-top: 24px;
+}
+
+input#hours {
+	width: 80px;
+}
+input#hours + label {
+	color: #000;
+	margin-left: 4px;
+}
+
+
+/*      Этап / STAGE    */
+.widget.stage {
+	margin-top: 32px;
+	padding: 24px 32px;
+	border: 2px solid #eaedf4;
+}
+.widget.stage:not(.minimized) .stage-info .icon--dropdown::before {
+	display: inline-block;
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.stage-info .icon--dropdown {
+	cursor: pointer;
+}
+.widget.stage.minimized .widget-header ~ * {
+	display: none;
+}
+.widget.stage .widget-header {
+	cursor: pointer;
+}
+.widget.stage .widget-title {
+	color: #26272b;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-right: 12px;
+}
+.widget.stage .stage-info {
+	margin-right: -8px;
+	color: #26272b;
+}
+.widget.stage .stage-status {
+	margin-right: 16px;
+}
+.stage-actions {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin: 6px 0 -8px;
+}
+.stage-actions button:not(:last-child) {
+	margin: 8px 16px 0 0;
+}
+.stage-actions button:not(.icon--trash):last-child {
+	margin-left: 0;
+}
+h3.stage-for {
+	margin: 32px 0 24px;
+}
+
+
+/*      Слой "Просмотр процесса"    */
+.process-controls button {
+	margin-top: 0 !important;
+}
+.process-controls button:not(:first-child) {
+	margin-left: 28px;
+}
+.process-controls .help-link {
+	float: right;
+	line-height: 44px;
+	font-size: 20px;
+}
+.page.page--view .stage {
+	margin-top: 24px;
+}
+.page.page--view .stage + .stage {
+	margin-top: 12px;
+}
+
+/*      Слой "Просмотр процесса"    */
+.page--process input[name="remindAfter"] {
+	width: 4.3em;
+}
+
+/*      Слой "Добавление Этапа"     */
+.page--stage .form td:first-child {
+	width: 140px;
+}
+
+/*      Слой "История процесса"     */
+.page--process-history .process-name {
+	margin: 12px 0 -10px;
+	color: #1276ED;
+}
+.page--process-history .history-evaluation {
+	margin-top: 30px;
+}
+.page--process-history .history-day {
+	margin-top: 24px;
+}
+.page--process-history .history-day .tag {
+	display: block;
+	width: 100px;
+	margin: auto;
+	text-align: center;
+}
+.page--process-history .dialogue {
+	margin-top: 16px;
+	padding: 16px 20px;
+	background: #f5f7fb;
+	border-radius: 6px;
+}
+.page--process-history .dialogue-title {
+	margin-bottom: 12px;
+}
+.page--process-history .question {
+	/* margin-top: 12px; */
+	font-size: 14px;
+	line-height: 22px;
+}
+.page--process-history .question-text {
+	color: #61636c;
+}
+.page--process-history .answer-text {
+	margin-top: 5px;
+	padding: 6px 70px 4px 12px;
+	background: #fff;
+	border-radius: 6px;
+}
+.page--process-history .answer-text button {
+	margin-top: 0;
+}
+.page--process-history .answer-time {
+	position: absolute;
+	top: 5px;
+	right: 12px;
+	font-size: 12px;
+	color: #8d8f9a;
+}
+.page--process-history .date-filter.ant-dropdown-trigger {
+	border: 1px solid #ced2dc;
+	font-size: 12px;
+	white-space: nowrap;
+	margin-right: 15px;
+}
+.page--process-history .feedbacks {
+	padding-left: 40px;
+}
+.page--process-history .feedback {
+	margin-top: 7px;
+}
+.page--process-history .feedback-add {
+	text-align: right;
+}
+.page--process-history .feedback-add button {
+	margin-top: 5px;
+	font-weight: normal;
+	font-size: 13px;
+	margin-right: 12px;
+}
+.page--process-history .feedback-form {
+	margin: 20px 0;
+}
+.page--process-history .feedback-user {
+	color: #61636c;
+}
+.page--process-history .feedback-text {
+	margin-top: 5px;
+	padding: 6px 120px 4px 12px;
+	background-color: #fffbe6;
+	border-radius: 6px;
+}
+.page--process-history .feedback-time,
+.page--process-history .feedback-remove {
+	position: absolute;
+	top: 5px;
+	right: 12px;
+	font-size: 12px;
+	color: #8d8f9a;
+}
+.page--process-history .feedback-remove {
+	display: none;
+}
+.page--process-history .feedback-remove:hover {
+	color: #000;
+}
+.page--process-history .feedback:hover .feedback-time {
+	display: none;
+}
+.page--process-history .feedback:hover .feedback-remove {
+	display: inline;
+	cursor: pointer;
+}
+.page--process-history .feedback-form-actions button.small.loading {
+	line-height: 36px;
+}
+.page--process-history .question-rating span {
+	color: #3dae41;
+}
+.page--process-history .total-rating span {
+	color: #3dae41;
+	font-weight: bold;
+}
+
+/*      Слой "Performance Review"     */
+.page--performance-review .form {
+	width: 560px;
+}
+.page--performance-review .form td:first-child:not(:last-child) {
+	width: 180px;
+}
+.page--performance-review .form button.add {
+	margin: 0 0 6px;
+}
+.page--performance-review button.additional-parametrs {
+	margin-top: 30px;
+}
+.page--performance-review h3 {
+	margin: 32px 0 24px;
+}
+
+/*      Слой с шагами     */
+.page--steps .page-content {
+	padding-right: 120px;
+	bottom: 24px;
+}
+.page--steps .illustration {
+	position: absolute;
+	top: 0;
+	right: 120px;
+	width: 200px;
+	height: 170px;
+	background: url(../img/process--performance-review.svg) 150% 0 no-repeat;
+}
+.page--steps .page-content .page-description {
+	min-height: 52px;
+	padding-right: 200px;
+	margin-bottom: 60px;
+}
+/*	Scrum Meeting */
+.page--steps.scrum-meeting .illustration {
+	width: 270px;
+	right: 40px;
+	background: url(../img/process--scrum-meeting.svg) no-repeat;
+}
+.page--steps.scrum-meeting .page-content .page-description {
+	margin-bottom: 80px;
+}
+/*	Найм сотрудника */
+.page--steps.employment .illustration {
+	width: 301px;
+	height: 171px;
+	right: 40px;
+	background: url(../img/process--employment.svg) no-repeat;
+}
+.page--steps.employment .page-content .page-description {
+	margin-bottom: 80px;
+	padding-right: 230px;
+}
+/*	Индекс счастья */
+.page--steps.happiness-index .illustration {
+	width: 208px;
+	height: 238px;
+	right: 100px;
+	background: url(../img/process--happiness-index.svg) no-repeat;
+}
+.page--steps.happiness-index .page-content .page-description {
+	margin-bottom: 80px;
+	padding-right: 230px;
+}
+/*	Ретроспектива */
+.page--steps.retrospectiva .illustration {
+	width: 285px;
+	height: 165px;
+	right: 40px;
+	background: url(../img/process--retrospectiva.svg) no-repeat;
+}
+.page--steps.retrospectiva .page-content .page-description {
+	padding-right: 230px;
+}
+
+/*		Шаг 3. Дата начала и повторяемость*/
+.page--steps .form.start-date_repeat td:first-child {
+	width: 100px;
+}
+.page--steps .form.start-date_repeat .basic-single {
+	width: 100%;
+}
+.page--steps .form.start-date_repeat td:nth-child(2) {
+	width: 285px;
+}
+.page--steps .form.start-date_repeat td:nth-child(2) .react-datepicker-wrapper,
+.page--steps .form.start-date_repeat td:nth-child(2) .react-datepicker__input-container {
+    width: 100%;
+}
+.page--steps .form.start-date_repeat td:first-child{
+    padding-right: 10px;
+}
+.page--steps .form .field-array {
+    padding-right: 37px !important;
+}
+
+/* Диалоги */
+td.el_question {
+    padding-right: 0 !important;
+}
+td.el_question .input_label {
+    margin-bottom: 3px;
+    font-weight: 700;
+}
+td.el_question .box_input {
+    margin-right: 30px;
+}
+td.el_question .icon--trash {
+    float: right;
+    margin-top: -34px;
+}
+td.el_question_answer_label {
+    vertical-align: middle;
+}
+td.el_question_answer_input {
+    padding-bottom: 3px !important;
+}
+td.el_question_answer_input > div {
+    margin-right: 30px;
+}
+td.el_question_answer_input > .icon--trash {
+    float: right;
+    margin-top: -36px;
+}

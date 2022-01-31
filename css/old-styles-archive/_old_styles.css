@@ -1,0 +1,58 @@
+/*	Раскладка форм на флексах */
+.form-row {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.form-row:not(:last-of-type) {margin-bottom: 16px;}
+.row-label {
+	margin-top: 10px;
+	color: #000;
+	white-space: nowrap;
+}
+.row-value {margin-left: 18px;}
+
+
+/*  Таблицы  */
+
+/*		Таблица сторудников 	*/
+.table-staff {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0 3px;
+	cursor: pointer;
+}
+.table-staff tbody tr {
+	position: relative;
+	z-index: 1;
+}
+.table-staff th {
+	padding: 0 24px 8px;
+	text-align: left;
+}
+.table-staff td {
+	height: 58px;
+	line-height: 58px;
+	padding: 0 24px;
+	background: #FFF;
+	white-space: nowrap;
+}
+.table-staff td:first-child {
+	width: 40%;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 6px 0 0 6px;
+}
+.table-staff td:last-child {
+	border-radius: 0 6px 6px 0;
+	text-align: right;
+	width: 40px;
+}
+.table-staff td:nth-last-child(2) {text-align: center;}
+
+/*Команды*/
+.table-staff.teams th {text-align: center;}
+.table-staff.teams td:first-child {width: 75%;}

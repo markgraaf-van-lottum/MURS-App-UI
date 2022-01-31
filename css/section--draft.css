@@ -1,0 +1,98 @@
+.ant-steps-label-vertical .ant-steps-item-title {
+    line-height: 22px;
+}
+.ant-steps-item-tail::after {
+    height: 2px;
+}
+.draft .dashboard-header {
+    justify-content: space-between;
+}
+.draft .dashboard-header .icon--left-circular {
+    vertical-align: -4px;
+}
+.draft .dashboard-header .icon--edit {
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.draft .dashboard-header .icon--edit:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.draft .controls {
+    height: 44px;
+    text-align: center;
+}
+.draft .controls button {
+    margin-top: 0;
+}
+.draft .step #tree-container {
+    height: calc(100vh - 400px);
+}
+.draft .step {
+    margin: 20px 0;
+    background: #fff;
+    border-radius: 5px;
+}
+.draft .step-notifications {
+    padding: 20px 40px;
+    max-width: 540px;
+    margin: 20px auto;
+}
+.draft .step-bot-link {
+    padding: 20px 40px;
+    max-width: 750px;
+    margin: 20px auto;
+}
+.draft .step-bot-link button {
+    text-align: left;
+}
+.draft .step-form {
+    padding: 20px 40px 25px;
+    max-width: 540px;
+    margin: 20px auto;
+}
+.draft .form {
+	margin-top: 16px;
+}
+.draft .form .field-array button {
+    display: block;
+    margin-top: 10px;
+}
+.draft .form .field-array .delete-select + button {
+	margin-top: 0;
+}
+.draft .form .field-array-item {
+	margin-bottom: 15px;
+}
+.draft .form .field-array-item .react-datepicker-popper {
+    width: 340px;
+}
+.draft .form .field-array .basic-single {
+	display: inline-block;
+	width: 300px;
+}
+.draft .form .field-array i.delete-select {
+	position: absolute;
+	top: 8px;
+	margin-left: 12px;
+	color: #8D8F9A;
+	cursor: pointer;
+}
+.draft .form .checkboxes-inline > span {
+	margin-right: 20px;
+}
+.draft .form .switcher-anonymous {
+    display: flex;
+    margin-bottom: 0;
+}
+.draft .form .switcher-anonymous label {
+    flex-grow: 1;
+}
+.draft .form .error {
+    color: red;
+    font-weight: 500;
+}
+.draft .table-list .row {
+	background: #f5f7fb;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Сотрудники</title>
+	<base href="../../">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+<div class="main-container" id="root">
+
+	<!-- Sidebar -->
+	<aside>
+		<a href="#" class="logo"></a>
+
+		<!-- Меню -->
+		<nav class="menu">
+			<a href="#" class="with-submenu">Продажа</a>
+			<!-- подменю -->
+			<div class="submenu">
+				<a href="learning.html" class="active">Обучение</a>
+				<a href="rating.html">Рейтинг</a>
+				<a href="#">Тренировки</a>
+				<a href="#">Скрипты</a>
+			</div>
+			<a href="#" class="with-submenu">Вовлеченность</a>
+			<a href="#">Команда</a>
+			<a href="#">Сотрудники</a>
+			<a href="#">Клиенты</a>
+			<a href="#">Настройки</a>
+		</nav>
+
+		<a href="#" class="icon--logout">Выход</a>
+
+		<a href="#" class="goto-learning">?</a>
+	</aside>
+
+	<!-- Основное содержимое -->
+	<main>
+
+		<div class="staff-list">
+
+			<div class="dashboard-header">
+				<h1>Сотрудники</h1>
+				<button type="button" class="small  icon--telegram-filled">Пригласить участника</button>
+				<button class="small  icon--slack-filled">Пригласить участника</button>
+				<button class="small  ">Пригласить участника</button>
+				<input type="text" class="search-bar" placeholder="Поиск" value="">
+			</div>
+
+			<!-- <h1>Сотрудники</h1> -->
+			<!-- <button class="small  icon--telegram-filled">Пригласить участника</button> -->
+
+			<!-- Таблица-список -->
+			<div class="table-list  staff">
+				<div class="table-header">
+					<div>Имя</div>
+					<div>Должность</div>
+					<div>Статус</div>
+					<div></div>
+				</div>
+				<div class="row">
+					<div>Иванов Александр</div>
+					<div>Продажник</div>
+					<div><div class="tag  success">Активный</div></div>
+					<div class="actions">
+						<i class="icon--edit"></i>
+						<i class="icon--trash"></i>
+					</div>
+				</div>
+				<div class="row">
+					<div>Юмашев Фирс </div>
+					<div>Продажник</div>
+					<div><div class="tag  error">Неактивный</div></div>
+					<div class="actions">
+						<i class="icon--edit"></i>
+						<i class="icon--trash"></i>
+					</div>
+				</div>
+				<div class="row">
+					<div>Витвицкий Георгий </div>
+					<div>Веб-разработчик</div>
+					<div><div class="tag  error">Неактивный</div></div>
+					<div class="actions">
+						<i class="icon--edit"></i>
+						<i class="icon--trash"></i>
+					</div>
+				</div>
+				<div class="row">
+					<div>Болобанов Ярослав </div>
+					<div>Веб-разработчик</div>
+					<div><div class="tag  success">Активный</div></div>
+					<div class="actions">
+						<i class="icon--edit"></i>
+						<i class="icon--trash"></i>
+					</div>
+				</div>
+				<div class="row">
+					<div>Валуев Артём </div>
+					<div>Веб-разработчик</div>
+					<div><div class="tag  success">Активный</div></div>
+					<div class="actions">
+						<i class="icon--edit"></i>
+						<i class="icon--trash"></i>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</main>
+</div>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

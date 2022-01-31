@@ -1,0 +1,126 @@
+/*      REACT SELECT - Theme    */
+.basic-single {
+	display: inline-block;
+	width: 240px;
+}
+.basic-single.w100 {
+	width: 100% !important;
+}
+.basic-single .select__control,
+.drop-target.date-filter {
+	height: 44px;
+	box-shadow: inset 0 0 0 1px #CED2DC;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: box-shadow .2s ease-in-out;
+}
+.basic-single .select__control.select__control--is-focused {
+	box-shadow: inset 0 0 0 2px #1276ED;
+}
+.basic-single .select__value-container {
+	padding: 0 8px 0 16px;
+}
+.basic-single .select__single-value {
+	color: #26272b;
+}
+.basic-single .select__single-value,
+.basic-single .select__placeholder {
+	top: 48%;
+}
+.basic-single .select__placeholder {
+	white-space: nowrap;
+}
+
+.basic-single .select__dropdown-indicator::before {
+	content: "\68";
+	color: #26272b;
+	line-height: 24px;
+}
+.basic-single .select__input input {
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+.basic-single .select__clear-indicator {
+	padding-right: 0;
+	color: #F3ADB1;
+}
+.basic-single .select__clear-indicator:hover {
+	color: #E67077;
+}
+
+/*IE brainfix*/
+_:-ms-lang(x),
+.select__single-value {
+	padding-top: 4px;
+}
+_:-ms-lang(x),
+.select__placeholder {
+	padding-top: 4px;
+}
+
+
+/* Список */
+.basic-single .select__menu,
+.drop-content .drop-menu {
+	margin-top: 4px;
+	border-radius: 6px;
+	box-shadow: 0 4px 12px rgba(38, 39, 43, 0.16);
+	cursor: pointer;
+}
+.basic-single .select__menu.loading::before {
+	width: 32px !important;
+	height: 32px !important;
+}
+
+/* Пункты списка */
+.basic-single .select__menu-list {
+	padding: 2px 0 2px 36px;
+	max-height: 331px;
+	overflow: overlay;
+}
+.basic-single .select__option {
+	position: relative;
+	line-height: 20px;
+	padding: 10px 12px 10px 0;
+	cursor: pointer;
+}
+.basic-single .select__option:not(:last-child),
+.drop-content .drop-menu li:not(:last-child) {
+	border-bottom: 1px solid #EAEDF4;
+}
+.basic-single .select__option:active,
+.basic-single .select__option--is-selected,
+.basic-single .select__option--is-focused {
+	background: none;
+}
+.basic-single .select__option--is-selected,
+.basic-single .select__option.add-option {
+	color: #1276ED;
+}
+.basic-single .select__option::before {
+	color: inherit;
+	position: absolute;
+	top: 10px;
+	left: -27px;
+}
+.basic-single .select__option--is-selected::before {
+	content: "\63";
+}
+.basic-single .select__option.add-option {
+	line-height: 52px;
+}
+.basic-single .select__option.add-option::before {
+	content: "\61";
+	font-size: 24px;
+	top: 14px;
+	left: -28px;
+}
+.basic-single .select__option.add-option::after {
+	content: "Добавить";
+	font-weight: bold;
+}
+.basic-single .select__create-label {
+	color: #1276ED;
+	font-weight: bold;
+}

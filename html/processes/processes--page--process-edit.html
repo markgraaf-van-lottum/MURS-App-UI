@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Редактирование процесса</title>
+	<base href="../../">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+<div class="main-container" id="root">
+	<!-- Sidebar -->
+	<aside>
+		<!-- Закругленные края -->
+		<div class="edge--top"></div>
+		<div class="edge--bottom"></div>
+
+		<nav class="menu-button"></nav>
+
+		<a class="logo"></a>
+
+		<!-- Меню -->
+		<nav class="menu">
+			<a href="#" class="with-submenu">Продажа</a>
+			<!-- подменю -->
+			<div class="submenu">
+				<a href="learning.html">Обучение</a>
+				<a href="rating.html" class="active">Рейтинг</a>
+				<a href="#">Тренировки</a>
+				<a href="#">Скрипты</a>
+			</div>
+			<a href="#" class="with-submenu">Вовлеченность</a>
+			<a href="#">Команда</a>
+			<a href="#">Сотрудники</a>
+			<a href="#">Клиенты</a>
+			<a href="#">Настройки</a>
+		</nav>
+
+		<div class="service-settings-progress-bar">
+			<div class="progress-bar__text">Вы завершили 1 шаг из 4 по настройке системы. Продолжайте в том же духе!</div>
+			<div class="progress-bar__bar">
+				<div class="progress-bar__fill" style="width: 25%;"></div>
+			</div>
+		</div>
+
+		<footer>
+			<a href="#" class="icon--logout">Выход</a>
+			<a href="#" class="goto-learning">?</a>
+		</footer>
+	</aside>
+
+	<!-- Основное содержимое -->
+	<main>
+		<div class="dashboard">
+			<h1>Процессы</h1>
+			
+			<div class="dashboard-tiles">
+				<div class="widget  add-new-item">Добавить процесс</div>
+				
+				<div class="widget">
+					<div class="widget-header">
+						<a href="" class="widget-title">ScrumMeeting</a>
+						<div class="widget-actions">
+							<i class="icon--copy"></i>
+							<i class="icon--stop"></i>
+							<i class="icon--pause"></i>
+						</div>
+					</div>
+					<p class="widget-description">Что делал вчера, сегодня и какие есть проблемы</p>
+					<div class="tags-block">
+						<div class="tag  success">Метка</div>
+						<!-- <div class="tag  error">Метка</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+	<!-- СЛОЙ -->
+	<div class="page  open  page--process">
+		<div class="page-close icon--close"></div>
+		
+		<div class="page-content">
+			
+			<div class="page-header">
+				<h1 class="page-title">Редактирование процесса</h1>
+			</div>
+
+			<!-- ФОРМА -->
+			<table class="form">
+				<tr>
+					<td>Название</td>
+					<td>
+						<input type="text" value="ScrumMeet">
+						<!-- <button class="bordered  red">Тест отправки</button> -->
+					</td>
+				</tr>
+				<tr>
+					<td>Описание</td>
+					<td><input type="text" value="Что делал вчера, сегодня и какие есть проблемы" class="w-full"></td>
+				</tr>
+				<tr>
+					<td>Бот</td>
+					<td><input type="text" value="СЕЛЕКТ"></td>
+				</tr>
+				<tr>
+					<td>Начало</td>
+					<td><input type="text" name="dateStart" placeholder="Выберите дату" autocomplete="off" class="" value="06.03.2020 18:00"></td>
+				</tr>
+				<tr>
+					<td>Повторять</td>
+					<td><input type="text" value="СЕЛЕКТ"></td>
+				</tr>
+				<tr>
+					<td>Напоминать через, мин</td>
+					<td><input class="  success  " name="remindAfter" data-mtip="tooltip_147977039" placeholder="30" type="text" maxlength="255" value="999"></td>
+				</tr>
+			</table>
+		</div>
+		
+		<!-- Нижняя панель -->
+		<div class="page-action-panel">
+			<button>Сохранить</button>
+			<button class="ghost">Отмена</button>
+			<button class="clean  icon--trash">Удалить</button>
+		</div>
+	</div>
+
+</div>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

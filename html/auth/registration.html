@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Регистрация</title>
+	<base href="../../">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+<div class="main-container" id="root">
+
+	<div class="auth-page-bg"></div>
+	<div class="auth-form">
+		<div class="reg-form">
+			<h1>Регистрация</h1>
+			
+			<table class="form">
+				<tr>
+					<td>Имя</td>
+					<td><input type="text" placeholder="Имя"></td>
+				</tr>
+				<tr>
+					<td>Название компании</td>
+					<td><input type="text" placeholder="Название компании"></td>
+				</tr>
+				<tr>
+					<td>E-mail</td>
+					<td><input type="email" placeholder="E-mail"></td>
+				</tr>
+				<tr>
+					<td>Телефон</td>
+					<td><input type="tel" placeholder="Телефон"></td>
+				</tr>
+			</table>
+			
+			<input type="checkbox" id="check1">
+			<label for="check1" class="label-checkbox">Предоставляю согласие на <a href="">обработку персональных данных</a></label>
+
+			<!-- каптча -->
+			<div class="recaptcha-wrapper" style="width: 304px;line-height: 76px;border: 1px solid;">reCaptcha</div>
+
+			<button class="login">Отправить запрос</button>
+			<button class="ghost">Войти</button>
+		</div>
+	</div>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Просмотр сотрудника</title>
+	<base href="../../">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+<div class="main-container" id="root">
+	<!-- Основное содержимое -->
+	<main>
+		<div class="staff-list">
+			<h1>Сотрудники <i class="icon--add-solid"></i></h1>
+
+			<!-- Таблица-список -->
+			<div class="table-list  staff">
+				<div class="table-header">
+					<div></div>
+					<div>Должность</div>
+					<div>Роль</div>
+					<div>Команда</div>
+					<div></div>
+					<div></div>
+				</div>
+				<div class="row">
+					<div>Иванов Александр</div>
+					<div>Продажник</div>
+					<div>Менеджеры, Администраторы</div>
+					<div>Дизайн и аналитика</div>
+					<div><div class="tag  success">Активный</div></div>
+					<div><i class="icon--trash"></i></div>
+				</div>
+				<div class="row">
+					<div>Юмашев Фирс </div>
+					<div>Продажник</div>
+					<div>Менеджеры</div>
+					<div>Маркетинг</div>
+					<div><div class="tag  error">Неактивный</div></div>
+					<div><i class="icon--trash"></i></div>
+				</div>
+				<div class="row">
+					<div>Витвицкий Георгий </div>
+					<div>Веб-разработчик</div>
+					<div>Разработчики</div>
+					<div>Фронт-разработка</div>
+					<div><div class="tag  error">Неактивный</div></div>
+					<div><i class="icon--trash"></i></div>
+				</div>
+				<div class="row">
+					<div>Болобанов Ярослав </div>
+					<div>Веб-разработчик</div>
+					<div>Разработчики</div>
+					<div>Фронт-разработка</div>
+					<div><div class="tag  success">Активный</div></div>
+					<div><i class="icon--trash"></i></div>
+				</div>
+				<div class="row">
+					<div>Валуев Артём </div>
+					<div>Веб-разработчик</div>
+					<div>Разработчики</div>
+					<div>Фронт-разработка</div>
+					<div><div class="tag  success">Активный</div></div>
+					<div><i class="icon--trash"></i></div>
+				</div>
+			</div>
+
+		</div>
+	</main>
+
+	<!-- СЛОЙ -->
+	<div class="page  page--no-bottom-panel  open  page--view">
+		<div class="page-close icon--close"></div>
+
+		<div class="page-content">
+			
+			<div class="page-header">
+				<h1 class="page-title">Иванов Иван ИвановичИванов Иван ИвановичИванов Иван Иванович</h1>
+				<div class="status  tags-block">
+					<div class="tag  success">Активный</div>
+				</div>
+			</div>
+
+			<!-- Параметры Сотрудника -->
+			<div class="params-container">
+				<div class="staff-params-edit">
+					<button class="small  clean  icon--edit">Редактировать</button>
+				</div>
+				<table class="staff-params">
+					<tr>
+						<td>Telegram ID</td>
+						<td>ivanovivanovivanovivanov ivanovivanovivanovivanov ivanovivanovivanovivanov </td>
+					</tr>
+					<tr>
+						<td>Telegram Username</td>
+						<td>ivanovivanovivanovivanovivanovivanovivanovivanovivanovivanovivanov</td>
+					</tr>
+					<tr>
+						<td>Должность</td>
+						<td>Маркетолог Маркетолог Маркетолог Маркетолог Маркетолог Маркетолог Маркетолог Маркетолог </td>
+					</tr>
+					<!-- <tr>
+						<td>Роль</td>
+						<td>Админ, Менеджер Админ, Менеджер Админ, Менеджер Админ, Менеджер Админ, Менеджер Админ, Менеджер </td>
+					</tr>
+					<tr>
+						<td>Команда</td>
+						<td>Маркетинг Маркетинг Маркетинг Маркетинг Маркетинг Маркетинг Маркетинг </td>
+					</tr> -->
+				</table>
+			</div>
+
+			<!-- <h3>Вовлеченность — <span class="high-value">44.22</span></h3> -->
+			<h3>Вовлеченность — <span class="medium-value">44.22</span></h3>
+			<!-- <h3>Вовлеченность — <span class="low-value">44.22</span></h3> -->
+
+			<h3>Perfomance Review</h3>
+			<table class="table-perfomance-reviews">
+				<thead>
+					<tr>
+						<th>Дата</th>
+						<th>Ответов</th>
+						<th>Балл</th>
+					</tr>
+				</thead>
+				<tr>
+					<td>10 ноября 2018</td>
+					<td>14</td>
+					<td class="high-value">7,33</td>
+				</tr>
+				<tr>
+					<td>7 марта 2018</td>
+					<td>11</td>
+					<td class="medium-value">5,19</td>
+				</tr>
+				<tr>
+					<td>22 ноября 2017</td>
+					<td>7</td>
+					<td class="high-value">9,33</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+</div>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

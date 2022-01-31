@@ -1,0 +1,133 @@
+.auth-page-bg,
+.auth-form {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+.auth-page-bg {
+	left: 0;
+	width: calc(100% - 620px);
+	background: url(../img/logo.svg) 32px 28px, url(../img/auth-page-bg.svg) 0 100%,
+		linear-gradient(to top left, #ecf1ff 0%, rgba(236, 241, 255, 0) 100%);
+	background-repeat: no-repeat;
+	background-size: auto 32px, auto, auto;
+}
+.auth-form {
+	right: 0;
+	width: 630px;
+	min-height: 630px;
+	padding: 24px;
+	background: #fff;
+	overflow: auto;/*для IE*/
+	overflow: overlay;
+}
+.login-form,
+.reg-form,
+.password-recovered {
+	height: 100%;
+	margin: auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+}
+.auth-form input {
+	width: 100%;
+}
+.auth-form h1 {
+	margin: auto 0 40px;
+}
+.auth-form button {
+	flex-shrink: 0;
+}
+.auth-form button.login {
+	margin: 40px 0 auto;
+}
+.auth-form a.button.ghost:not(:last-child) {
+	margin: 12px 0 0 0;
+}
+.auth-form a.button,
+.auth-form button {
+	margin-left: 0;
+}
+.auth-form .label-checkbox {
+	font-size: 14px;
+	line-height: 23px;
+	margin-top: 32px;
+}
+.login-form {
+	width: 304px;
+}
+.auth-form .login-form button,
+.auth-form .login-form a.button {
+	width: 100%;
+}
+.reg-form {
+	width: 440px;
+}
+.reg-form ::-webkit-input-placeholder {
+	visibility: hidden;
+}
+.reg-form ::-moz-placeholder {
+	visibility: hidden;
+}
+.reg-form ::-ms-input-placeholder {
+	visibility: hidden;
+}
+
+.auth-form .reg-form .form td:last-child {
+	width: 300px;
+}
+.password-recovered {
+	justify-content: center;
+}
+.password-recovered h1 {
+	margin: 40px 0;
+}
+.password-recovered .button {
+	margin-top: 40px;
+}
+
+.reg-form .recaptcha-wrapper {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.auth-form .request-sent {
+	width: 300px;
+	height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	text-align: center;
+}
+
+.main-container > .lang-switch {
+	position: absolute;
+	top: 5px;
+	right: 12px;
+}
+.main-container > .lang-switch > span {
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 16px;
+	color: #aaa;
+}
+.main-container > .lang-switch > span:hover {
+	color: #555;
+}
+.main-container > .lang-switch > span.active {
+	color: #26272b;
+	pointer-events: none;
+}
+.main-container > .lang-switch > span + span {
+	margin-left: 15px;
+}

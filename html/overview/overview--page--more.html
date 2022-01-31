@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Обзор - слой "подробнее"</title>
+	<base href="../../">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+<div class="main-container" id="root">
+
+	<!-- Меню -->
+	<aside>
+		<!-- Закругленные края -->
+		<div class="edge--top"></div>
+		<div class="edge--bottom"></div>
+
+		<nav class="menu-button"></nav>
+
+		<a class="logo"></a>
+
+		<!-- Меню -->
+		<nav class="menu">
+			<a href="#" class="with-submenu">Продажа</a>
+			<!-- подменю -->
+			<div class="submenu">
+				<a href="learning.html">Обучение</a>
+				<a href="rating.html" class="active">Рейтинг</a>
+				<a href="#">Тренировки</a>
+				<a href="#">Скрипты</a>
+			</div>
+			<a href="#" class="with-submenu">Вовлеченность</a>
+			<a href="#">Команда</a>
+			<a href="#">Сотрудники</a>
+			<a href="#">Клиенты</a>
+			<a href="#">Настройки</a>
+		</nav>
+
+		<div class="service-settings-progress-bar">
+			<div class="progress-bar__text">Вы завершили 1 шаг из 4 по настройке системы. Продолжайте в том же духе!</div>
+			<div class="progress-bar__bar">
+				<div class="progress-bar__fill" style="width: 25%;"></div>
+			</div>
+		</div>
+
+		<footer>
+			<a href="#" class="icon--logout">Выход</a>
+			<a href="#" class="goto-learning">?</a>
+		</footer>
+	</aside>
+
+	<div class="aside__menu-overlay"></div>
+	
+	<!-- Основное содержимое -->
+	<main>
+		<div class="statistics">
+			<!-- Overlay (когда нет данных) -->
+			<div class="no-data-overlay">
+				<h2>Заголовок оверлей-блока</h2>
+				<p>Основной поясняющий текст. Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</p>
+				<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</p>
+				<p class="fs-small">Текст меньшего размера шрифта (по необходимости)</p>
+				<button class="small">Подробнее</button>
+			</div>
+
+			<!-- Вкладки -->
+			<div class="stats-category  tab-bar">
+				<div class="tab  active">Вовлеченность</div>
+				<div class="tab">Прием на работу</div>
+				<div class="tab">Performance review</div>
+				<div class="tab">Nps сотрудника</div>
+				<div class="tab">Scrum митинг</div>
+			</div>
+
+			<!-- Виджет (график) -->
+			<div class="widget">
+				<h2>Индекс счастья</h2>
+				<!-- placeholder  -->
+				<img class="" src="img/_tmp-stats-graphic-example.png" width="100%" height="" alt="">
+			</div>
+
+			<!-- Виджет -->
+			<div class="widget">
+				<h2>Сотрудники</h2>
+
+				<table class="table-widget  stuff">
+					<thead>
+						<tr>
+							<th>№</th>
+							<th>Сотрудник</th>
+							<th>Должность</th>
+							<th>Роль</th>
+							<th>Ответов</th>
+							<th>Макс. возможное</th>
+							<th>Вовлеченность</th>
+						</tr>
+					</thead>
+					<tr>
+						<td>1</td>
+						<td>Сабирянов Роберт</td>
+						<td>Директор</td>
+						<td>Администратор</td>
+						<td>17</td>
+						<td>22</td>
+						<td class="medium-value">77,2%</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Сабирянов Роберт</td>
+						<td>Директор</td>
+						<td>Администратор</td>
+						<td>17</td>
+						<td>22</td>
+						<td class="medium-value">77,2%</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Сабирянов Роберт</td>
+						<td>Директор</td>
+						<td>Администратор</td>
+						<td>17</td>
+						<td>22</td>
+						<td class="medium-value">77,2%</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</main>
+
+	<!-- СЛОЙ -->
+	<div class="page  open  page--more-info">
+		<div class="page-close  icon--close"></div>
+		
+		<div class="page-content">
+
+			<div class="page-header">
+				<h1 class="page-title">Заголовок</h1>
+			</div>
+
+			<p>Периодическое мероприятие для запуска процесса улучшений в команде, путем опроса сотрудников о положительных и отрицательных моментах в работе за последний период.</p>
+			<img src="https://www.benricho.org/Unchiku/edo-syokunin/07-1769syokuninzukushiutaawase/img-01/small/04.jpg" width="" height="" alt="">
+			<p>Данный механизм нашего сервиса позволяет мотивировать сотрудников, предлагать улучшения и брать на себя ответственность за внедрение.</p>
+			<p>Также полная открытость данных внутри команды, увеличивает причастность каждого сотрудника, даже если он не участвовал в ретроспективе.</p>
+			<img src="https://avatars.mds.yandex.net/get-pdb/964669/10e3f7ab-9e9b-4f32-bb85-e8328bb0e1a7/s1200?webp=false" width="" height="" alt="">
+
+		</div>
+		
+		<!-- Нижняя панель -->
+		<div class="page-action-panel">
+			<button>Создать еженедельную встречу</button>
+		</div>
+	</div>
+
+</div>
+<script type="text/javascript">
+	document.querySelector('.page-close').onclick = function () {document.querySelector('.page').style.display = "none";};
+</script>
+</body>
+</html>

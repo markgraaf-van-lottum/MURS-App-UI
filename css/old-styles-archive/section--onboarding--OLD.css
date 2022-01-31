@@ -1,0 +1,68 @@
+.onboarding {
+	position: relative;
+	max-width: 540px;
+	margin: 80px 0 0 42%;
+}
+.onboarding::before {
+	content: "";
+	display: block;
+	width: 480px;
+	height: 375px;
+	position: absolute;
+	top: 0;
+	right: 100%;
+	background: url(../img/onboarding-bg.svg) 0 0 no-repeat;
+}
+.onboarding h1 {
+	margin-bottom: 16px;
+}
+.onboarding-steps-description {
+	margin-bottom: 32px;
+	font-size: 18px;
+}
+.widget.onboarding-step {
+	padding: 20px 24px 19px 60px;
+	padding-left: 60px !important;
+	margin-bottom: 16px;
+}
+.widget.onboarding-step::before {
+	content: "";
+	position: absolute;
+	top: 23px;
+	left: 20px;
+	display: block;
+	width: 16px;
+	height: 16px;
+	border: 2px solid #ced2dc;
+	border-radius: 50%;
+}
+.widget.onboarding-step.step--complete::before {
+	content: "\63";
+	color: #3dae41;
+	border-color: #3dae41;
+	text-indent: -1px;
+	font-size: 18px;
+	line-height: 17px;
+	cursor: default;
+}
+.widget.onboarding-step:not(.step--active):not(.step--complete) {
+	opacity: 0.5;
+}
+.widget.onboarding-step:not(.step--active):not(.step--complete) h3 {
+	color: #26272b;
+}
+.widget.onboarding-step.step--complete h3 {
+	color: #3dae41;
+    cursor: pointer;
+}
+
+/*      Слой "Создание бота"    */
+.page--bot textarea {
+	width: 370px;
+}
+.page--bot .input-description {
+	margin-left: 16px;
+	color: #1276ED;
+	font-size: 14px;
+	cursor: pointer;
+}

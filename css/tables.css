@@ -1,0 +1,295 @@
+/*      ТАБЛИЦА-СПИСОК      */
+.table-list {
+	margin: 8px 0 16px;
+	cursor: pointer;
+}
+
+/* Строка */
+.table-list .row,
+.table-list .table-header {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	padding: 0 12px;
+}
+.table-list .row {
+	margin-top: 3px;
+	background: #fff;
+	border-radius: 6px;
+	box-shadow: 0 4px 16px rgba(38, 39, 43, 0.04);
+	transition: box-shadow 0.3s, background 0.3s;
+}
+.table-list .row:hover,
+.dashboard-tiles .widget:hover {
+	box-shadow: 0 4px 12px rgba(38, 39, 43, 0.16);
+	z-index: 1;
+}
+.table-list .row:active {
+	background: #ecf1ff;
+	box-shadow: 0 4px 12px rgba(0, 63, 224, 0.02);
+	z-index: 1;
+}
+/*	Строка на белом фоне */
+.page .table-list .row {
+	margin-top: -1px;
+	border: 1px solid #EAEDF4;
+	background: none;
+	box-shadow: none !important;
+	transition: border-color .3s;
+}
+.page .table-list .row:hover {
+	border-color: gainsboro;
+}
+.page .table-list .table-header + .row {
+	border-radius: 6px 6px 0 0;
+}
+.page .table-list .row:last-of-type {
+	border-radius: 0 0 6px 6px;
+}
+
+/* Шапка таблицы */
+.table-list .table-header {
+	height: 30px;
+	cursor: default;
+}
+.table-list .table-header > div {
+	padding: 0 12px;
+	color: #8d8f9a;
+	font-size: 14px;
+}
+.table-list .box-loader::before {
+	width: 26px;
+	height: 26px;
+	background: url(../img/loading--black.svg);
+}
+
+/* Ячейка */
+.table-list .box-loader,
+.table-list .row > div {
+	height: 58px;
+	line-height: 58px;
+	padding: 0 12px;
+	white-space: nowrap;
+	overflow: hidden;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+.table-list .row > div:first-child {
+	font-size: 18px;
+}
+
+/* Иконка удаления */
+.table-list .table-header > div:last-child,
+.table-list .row > div:last-child {
+	width: 50px;
+	text-align: right;
+	flex-shrink: 0;
+	flex-grow: 1;
+}
+
+.table-list .actions>i+i {
+	margin-left: 10px;
+}
+
+/* Таблица "СОТРУДНИКИ" */
+
+/*  Имя  */
+.table-list.staff > div > div:nth-child(1) {
+	flex-grow: 1;
+}
+/*  Должность  */
+.table-list.staff > div > div:nth-child(2) {
+	width: 24%;
+	flex-shrink: 0;
+}
+/*  Статус  */
+.table-list.staff > div > div:nth-child(3) {
+	width: 108px;
+	flex-shrink: 0;
+	text-align: right;
+}
+/*  Действия  */
+.table-list.staff > div > div:nth-child(4) {
+	width: 80px;
+	flex-grow: 0;
+}
+
+
+/* Таблица "КОМАНДЫ" */
+
+/*  Команда  */
+.table-list.col-3 > div > div:nth-child(1) {
+	width: 77%;
+}
+/*  Сотрудников  */
+.table-list.col-3 > div > div:nth-child(2):not(:last-child) {
+	width: 23%;
+	text-align: center;
+}
+
+
+/* Таблица "ДОСТИЖЕНИЯ" */
+/*  Emoji  */
+.table-list.achievements > div > div:nth-child(1) {
+	display: flex;
+	align-items: center;
+}
+/*  Название  */
+.table-list.achievements .row_title {
+	flex-grow: 1;
+	font-weight: bold;
+	font-size: 18px;
+}
+/*  Что развивает  */
+.table-list.achievements .row_tags {
+	width: 150px;
+	margin-right: 24px;
+	text-align: right;
+	flex-shrink: 0;
+}
+/*  Действия  */
+.table-list.achievements .actions {
+	flex-grow: 0 !important;
+}
+/*  Иконки  */
+.table-list.achievements .icon--edit:hover::before {
+	color: #1276ed;
+}
+.table-list.achievements .emoji-mart-emoji {
+	width: 32px;
+	height: 32px;
+}
+.table-list.achievements .row .row_icon::before {
+	font-size: 20px;
+}
+.table-list.achievements .icon-blue-book .row_icon::before {
+	content: '\1F4D8';
+}
+.table-list.achievements .icon-green-book .row_icon::before {
+	content: '\1F4D7';
+}
+.table-list.achievements .icon-red-book .row_icon::before {
+	content: '\1F4D5';
+}
+.table-list.achievements .icon-cheque .row_icon::before {
+	content: '\1F9FE';
+}
+.table-list.achievements .icon-arrow-top .row_icon::before {
+	content: '\1F51D';
+}
+.table-list.achievements .icon-handshake .row_icon::before {
+	content: '\1F91D';
+}
+.table-list.achievements .icon-trend-up .row_icon::before {
+	content: '\1F4C8';
+}
+.table-list.achievements .icon-direct-hit .row_icon::before {
+	content: '\1F3AF';
+}
+.table-list.achievements .icon-trophy .row_icon::before {
+	content: '\1F3C6';
+}
+.table-list.achievements .icon-money-bag .row_icon::before {
+	content: '\1F4B0';
+}
+.table-list.achievements .icon-money-face .row_icon::before {
+	content: '\1F911';
+}
+.table-list.achievements .icon-rocket .row_icon::before {
+	content: '\1F680';
+}
+
+
+/*		Таблица 		*/
+table {
+	width: 100%;
+	border: none;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+table th {
+	font-size: 14px;
+	color: #8d8f9a;
+	font-weight: normal;
+}
+
+/*		Таблица-виджет на главной	 */
+table.table-widget tbody tr {
+	border-top: 1px solid #EAEDF4;
+}
+table.table-widget tbody tr:hover {
+	background-color: #F5F7FB;
+}
+table.table-widget th {
+	height: 32px;
+	line-height: 32px;
+}
+table.table-widget td {
+	height: 43px;
+	line-height: 42px;
+}
+table.table-widget th,
+table.table-widget td {
+	padding: 0 16px;
+	white-space: nowrap;
+}
+
+/*		Таблица Сотрудники		*/
+table.table-widget.stuff tbody tr {
+	cursor: pointer;
+}
+
+.table-widget.stuff td {
+    line-height: normal;
+    height: 48px;
+    vertical-align: middle;
+}
+
+.table-widget.stuff tr > *:first-child {
+	width: 28px;
+	text-align: center;
+    vertical-align: middle;
+}
+.table-widget.stuff tr > *:nth-child(4) {
+    width: 12%;
+    min-width: 85px;
+    /*text-align: center;*/
+}
+.table-widget.stuff tr > *:nth-child(5) {
+    width: 12%;
+}
+.table-widget.stuff tr > *:nth-child(n+6) {
+    width: 12%;
+}
+.table-widget.stuff tr > *:nth-child(5),
+.table-widget.stuff tr > *:nth-child(6) {
+	text-align: center;
+}
+.table-widget.stuff th:nth-child(2),
+.table-widget.stuff th:nth-child(3),
+.table-widget.stuff th:nth-child(4),
+.table-widget.stuff td:nth-child(2),
+.table-widget.stuff td:nth-child(3) {
+	text-align: left;
+}
+.table-widget.stuff th:last-child,
+.table-widget.stuff td:last-child {
+	text-align: right;
+}
+
+
+/* Цвета значений */
+td.high-value,
+span.high-value {
+	color: #3dae41;
+}
+td.medium-value,
+span.medium-value {
+	color: #eb910a;
+}
+td.low-value,
+span.low-value {
+	color: #d82b36;
+}

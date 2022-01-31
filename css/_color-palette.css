@@ -1,0 +1,31 @@
+black			#26272B;
+black2			#61636C;
+black3			#8D8F9A;
+black4			#CED2DC;
+black5			#EAEDF4;
+black6			#F5F7FB;
+/*
+old-primaries
+primary0		#002C9E;
+primary		#003FE0;
+*/
+primary0		#00479E;
+primary		#1276ED;
+primary2		#4F7BEB;
+primary3		#96B0F4;
+primary4		#ECF1FF;
+error0			#B20E18;
+error				#D82B36;
+error2			#E67077;
+error3			#F3ADB1;
+error4			#FFEBEC;
+warning0		#CA7901;
+warning		#EB910A;
+warning2		#F4C874;
+warning3		#F5E5BB;
+warning4		#FBF7ED;
+success0		#117A15;
+success			#3DAE41;
+success2		#80CB82;
+success3		#B1E1B3;
+success4		#EDFBEE;

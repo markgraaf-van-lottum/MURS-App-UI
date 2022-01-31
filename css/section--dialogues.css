@@ -1,0 +1,134 @@
+/*      ДИАЛОГИ         */
+h1 .icon--left-circular {
+	margin-right: 20px;
+}
+h1 .icon--left-circular::before {
+	color: #ced2dc;
+	font-size: 32px;
+	vertical-align: -6px;
+	cursor: pointer;
+	transition: color 0.3s;
+}
+h1 .icon--left-circular:hover::before {
+	color: #8d8f9a;
+}
+
+h1 .clean {
+	margin-top: 0;
+    margin-left: 20px;
+	font-size: 24px;
+    color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+h1 .clean:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.dialogue-tree {
+	width: 900px;
+	height: 200px;
+	top: 45%;
+	left: 45%;
+}
+.dialogue-tree--preview {
+	position: absolute;
+	right: 22px;
+	bottom: 22px;
+	width: 300px;
+	height: 180px;
+}
+.dialogue-tree--preview::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #96b0f4;
+	border-radius: 6px;
+	background: #ecf1ff;
+	opacity: 0.5;
+	background-size: contain;
+}
+
+/*      Слой "Редактирование вопроса"   */
+.page--question-edit .switcher input + label {
+	min-width: 120px;
+}
+.page--question-edit .form td:first-child {
+	width: 160px;
+}
+
+.page-content .form + .text {
+	margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.attachments {
+	position: relative;
+}
+.attachments button.clean {
+	margin-left: 0;
+	color: #000;
+}
+.attachments .ant-upload-select {
+	position: absolute;
+	top: -36px;
+	right: 3px;
+	padding-top: 5px;
+	cursor: pointer;
+}
+.attachments .ant-upload-select>span {
+	padding: 8px;
+}
+.attachments .ant-upload-select .anticon {
+	font-size: 20px;
+}
+.attachments .ant-upload-list-item-name {
+	color: #000;
+}
+.attachments .ant-upload-list-item-info {
+	padding: 0 4px;
+	font-size: 15px;
+}
+.attachments .ant-upload-list-item-info>span {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+/* .attachments .ant-upload-list-item-info .anticon-paper-clip, */
+.attachments .ant-upload-list-item-info .anticon-download {
+	display: none;
+}
+.attachments .ant-upload-list-item-card-actions {
+	position: relative;
+	opacity: 1;
+}
+.attachments .ant-upload-list-item-card-actions a {
+	cursor: pointer;
+	font-size: 16px;
+}
+.attachments .ant-upload-list-item:hover .ant-upload-list-item-info {
+	background-color: #fff;
+}
+.attachments .ant-upload-list-item-info .anticon-loading,
+.attachments .ant-upload-list-item-info .anticon-paper-clip {
+	top: 3px;
+}
+.attachments a.ant-upload-list-item-name {
+	color: #1276ED;
+	text-decoration: none;
+}
+
+.dashboard.tree .controls {
+	height: 44px;
+    text-align: center;
+}
+button.light .anticon-trophy {
+	color: rgba(0, 0, 0, 0.4);
+	margin-right: 7px;
+}
+
+.form--question .max-time,
+.form--question .delay {
+	width: 120px;
+}

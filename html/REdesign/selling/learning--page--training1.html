@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Обучение - Слой "Тренировка 1"</title>
+	<base href="../../../">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+<div class="main-container" id="root">
+
+	<!-- Sidebar -->
+	<aside>
+		<a href="#" class="logo"></a>
+
+		<!-- Меню -->
+		<nav class="menu">
+			<a href="#" class="with-submenu">Продажа</a>
+			<!-- подменю -->
+			<div class="submenu">
+				<a href="learning.html" class="active">Обучение</a>
+				<a href="rating.html">Рейтинг</a>
+				<a href="#">Тренировки</a>
+				<a href="#">Скрипты</a>
+			</div>
+			<a href="#" class="with-submenu">Вовлеченность</a>
+			<a href="#">Команда</a>
+			<a href="#">Сотрудники</a>
+			<a href="#">Клиенты</a>
+			<a href="#">Настройки</a>
+		</nav>
+
+		<a href="#" class="icon--logout">Выход</a>
+	</aside>
+
+	<!-- Основное содержимое -->
+	<main>
+		<div class="container-1440">
+			<h1>Обучение</h1>
+			
+			<div class="dashboard-tiles  learning">
+				<div class="tile">
+					<div class="tile-cover"></div>
+					<div class="tile-title">Техника ПТС</div>
+					<div class="tile-description">3 задания</div>
+				</div>
+				<div class="tile">
+					<div class="tile-cover"></div>
+					<div class="tile-title">Работа с возражениями "Дорого"</div>
+					<div class="tile-description">5 заданий</div>
+				</div>
+				<div class="tile">
+					<div class="tile-cover"></div>
+					<div class="tile-title">Продажи СПИН</div>
+					<div class="tile-description">11 заданий</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- СЛОЙ -->
+	<div class="page  page--steps  page--training  open">
+		<div class="page-close icon--close"></div>
+		
+		<div class="page-content">
+			
+			<!-- Заголовок слоя -->
+			<div class="page-header">
+				<h1 class="page-title">Тренировка по заданию 1</h1>
+			</div>
+
+			<p class="page-description  fs-big">Мы обратили внимание, что люди, вовремя участвующие в активностях сервиса, также активны в мероприятиях компании, соблюдают договоренности и наиболее исполнительны. На основе этого создан рейтинг вовлеченности сотрудников.</p>
+
+			<!-- Для шага есть допклассы step--active и step--complete, которые управляют его внешним видом (в т.ч. скрывают внутренние элементы) -->
+			
+			<!-- Шаг 1 -->
+			<div class="widget  step  step--complete">
+				<h3 class="widget-title">1. Кто будет участвовать</h3>
+			
+				<table class="form  no-labels">
+					<tr>
+						<!-- Селект .basic-single -->
+						<td><input type="text" class="basic-single" value="СЕЛЕКТ (Выберите сотрудника)"></td>
+						<td><button class="clean  icon--add  small">Добавить</button></td>
+					</tr>
+					<tr>
+						<!-- Селект .basic-single -->
+						<td><input type="text" class="basic-single" value="СЕЛЕКТ (Выберите команду)"></td>
+						<td><button class="clean  icon--add  small">Добавить</button></td>
+					</tr>
+				</table>
+
+				<button>Далее</button>
+			</div>
+
+			<!-- Шаг 2 -->
+			<div class="widget  step  step--active">
+				<h3 class="widget-title">2. Выберите аудитора</h3>
+				
+				<table class="form  no-labels">
+					<tr>
+						<!-- Селект .basic-single -->
+						<td><input type="text" class="basic-single" value="СЕЛЕКТ (Выберите сотрудника)"></td>
+					</tr>
+				</table>
+				<button>Запустить тренировку</button>
+			</div>
+
+	</div>
+
+</div>
+
+</body>
+</html>

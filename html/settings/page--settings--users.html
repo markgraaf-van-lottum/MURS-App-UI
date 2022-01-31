@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Настройки (Пользователи)</title>
+	<base href="../../">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+<div class="main-container" id="root">
+
+	<!-- Sidebar -->
+	<aside>
+		<a href="#" class="logo"></a>
+
+		<!-- Меню -->
+		<nav class="menu">
+			<a href="#" class="with-submenu">Продажа</a>
+			<a href="#" class="with-submenu">Вовлеченность</a>
+			<a href="#">Команда</a>
+			<a href="#">Сотрудники</a>
+			<a href="#">Клиенты</a>
+			<a href="#">Настройки</a>
+		</nav>
+
+		<a href="#" class="icon--logout">Выход</a>
+	</aside>
+
+	<!-- Основное содержимое -->
+	<main></main>
+
+	<!-- СЛОЙ -->
+	<div class="page  page--settings  open">
+		<div class="page-close icon--close"></div>
+		
+		<div class="page-content">
+			
+			<!-- Заголовок слоя -->
+			<div class="page-header">
+				<h1 class="page-title">Настройки</h1>
+			</div>
+
+			<div class="tab-bar  small" style="margin-bottom: 24px;">
+				<div class="tab  active">Пользователи</div>
+				<div class="tab">Боты</div>
+			</div>
+
+			<div class="ant-tabs-content">
+				<table class="table-widget users">
+					<thead>
+						<tr>
+							<th>Имя</th>
+							<th>E-mail</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Alex&nbsp;Buylov</td>
+							<td>alx2das@gmail.com</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Foo&nbsp;Bar</td>
+							<td>foo@bar.io</td>
+							<td><i class="icon--trash"></i></td>
+						</tr>
+						<tr>
+							<td>Heaocdm&nbsp;Atydisooirunw,vcx</td>
+							<td>ndssdh@iuhhvtvnnn.zb</td>
+							<td><i class="icon--trash"></i></td>
+						</tr>
+						<tr>
+							<td>Heaocdm&nbsp;Atydis</td>
+							<td>ndssdh@nnn.zb</td>
+							<td><i class="icon--trash"></i></td>
+						</tr>
+						<tr>
+							<td>Heaocdm&nbsp;Atydis</td>
+							<td>ndssdh@nnn.zb</td>
+							<td><i class="icon--trash"></i></td>
+						</tr>
+						<tr>
+							<td>Heaocdm&nbsp;Atydis</td>
+							<td>ndssdh@nnn.zb</td>
+							<td><i class="icon--trash"></i></td>
+						</tr>
+						<tr>
+							<td>Heaocdm&nbsp;Atydis</td>
+							<td>ndssdh@nnn.zb</td>
+							<td><i class="icon--trash"></i></td>
+						</tr>
+						<tr>
+							<td>Heaocdm&nbsp;Atydis</td>
+							<td>ndssdh@nnn.zb</td>
+							<td><i class="icon--trash"></i></td>
+						</tr>
+						<tr>
+							<td>Heaocdm&nbsp;Atydis</td>
+							<td>ndssdh@nnn.zb</td>
+							<td><i class="icon--trash"></i></td>
+						</tr>
+						<tr>
+							<td>Heaocdm&nbsp;Atydis</td>
+							<td>ndssdh@nnn.zb</td>
+							<td><i class="icon--trash"></i></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+
+	<div class="page-action-panel">
+		<button type="button" class="loading">Добавить</button>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+	document.querySelector('.page-close').onclick = function () {document.querySelector('.page').style.display = "none";};
+</script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

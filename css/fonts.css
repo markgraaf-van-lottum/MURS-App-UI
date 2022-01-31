@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'),
+       url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Roboto Italic'), local('Roboto-Italic'),
+       url('../fonts/roboto-v20-latin_cyrillic-italic.woff2') format('woff2'),
+       url('../fonts/roboto-v20-latin_cyrillic-italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+       url('../fonts/roboto-v20-latin_cyrillic-500.woff2') format('woff2'),
+       url('../fonts/roboto-v20-latin_cyrillic-500.woff') format('woff');
+}
+
+/*      Иконочный Шрифт     */
+@font-face {
+	font-family: "icon-font";
+	src: url("../fonts/icon-font.eot");
+	src: url("../fonts/icon-font.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/icon-font.woff") format("woff"),
+		url("../fonts/icon-font.ttf") format("truetype"),
+		url("../fonts/icon-font.svg#icon-font") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}

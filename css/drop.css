@@ -1,0 +1,53 @@
+/*      DROP  -  Выпадающие списки      */
+
+.drop-content .drop-menu {
+	display: inline-block;
+	padding: 0 !important;
+	background: #fff;
+	overflow: hidden;
+}
+.drop-content .drop-menu li {
+	line-height: 43px;
+	padding: 0 20px !important;
+}
+.drop-content .drop-menu li.selected {
+	background: #f5f7fb;
+}
+/*.drop-content .drop-menu li.datepicker-container {
+	padding-top: 9px !important;
+	padding-bottom: 8px !important;
+	white-space: nowrap;
+	cursor: default;
+}*/
+
+/*  ANT-dropdown  */
+.ant-dropdown {
+	font-family: inherit !important;
+}
+.ant-dropdown .ant-dropdown-menu.header-dropdown {
+	min-width: 160px;
+}
+.ant-dropdown .ant-dropdown-menu {
+	padding: 0;
+	box-shadow: 0 4px 12px rgba(38, 39, 43, 0.16);
+	border-radius: 6px;
+}
+.ant-dropdown .ant-dropdown-menu-item-active {
+	background-color: #F5F7FB;
+}
+.ant-dropdown .ant-dropdown-menu-item:first-child {
+	border-radius: 6px 6px 0 0;
+}
+.ant-dropdown .ant-dropdown-menu-item:last-child {
+	border-radius: 0 0 6px 6px;
+}
+.ant-dropdown .ant-dropdown-menu-item > a {
+	color: #26272B;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 10px 20px 11px;
+	text-decoration: none;
+}
+.ant-dropdown .ant-dropdown-menu-item:not(:last-child) > a {
+	border-bottom: 1px solid #EAEDF4;
+}

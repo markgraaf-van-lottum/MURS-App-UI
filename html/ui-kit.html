@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>UI Kit</title>
+	<base href="../">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="css.css">
+	<style>
+		body {padding: 20px 4em; box-sizing: border-box;}
+		.notify {position: relative;left: auto;bottom: auto;}
+		.notify.error,
+		.notify.success,
+		.notify.warning {margin-top: 16px;}
+		.notify .title::before {content: 'Заголовок уведомления';}
+		.notify .text::before {content: 'Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.';}
+	</style>
+</head>
+<body>
+
+	<!-- Заголовки -->
+	<h1>H1 Заголовок</h1>
+	<h2>H2 Заголовок</h2>
+	<h3>H3 Заголовок</h3>
+	<h4>H4 Заголовок</h4>
+
+	<!-- Текст -->
+	<p class="fs-big">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</p>
+	<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</p>
+	<p class="fs-small">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</p>
+	<br>
+
+	<!-- Иконки -->
+	<div>
+		<i class="icon--add-solid"></i>
+		<i class="icon--add"></i>
+		<i class="icon--bell"></i>
+		<i class="icon--checked"></i>
+		<i class="icon--checkmark"></i>
+		<i class="icon--close"></i>
+		<i class="icon--close-round"></i>
+		<i class="icon--copy"></i>
+		<i class="icon--edit"></i>
+		<i class="icon--left-circular"></i>
+		<i class="icon--logout"></i>
+		<i class="icon--pause"></i>
+		<i class="icon--stop"></i>
+		<i class="icon--play"></i>
+		<i class="icon--settings"></i>
+		<i class="icon--trash"></i>
+		<i class="icon--history"></i>
+		<i class="icon--attention"></i>
+		<i class="icon--info"></i>
+		<i class="icon--checked-round"></i>
+		<i class="icon--left"></i>
+		<i class="icon--dropdown"></i>
+		<i class="icon--right"></i>
+		<i class="icon--home"></i>
+		<i class="icon--list"></i>
+		<i class="icon--table"></i>
+		<i class="icon--telegram-filled"></i>
+		<i class="icon--import"></i>
+		<i class="icon--export"></i>
+	</div>
+	<br>
+
+	<!-- Кнопки -->
+	<div>
+		<button>Отправить</button>
+		<button class="loading">Отправить</button>
+		<button class="small">Отправить</button>
+		<button class="light">Отправить</button>
+		<button class="light  loading">Отправить</button>
+		<button class="light  small">Отправить</button>
+		<button class="ghost">Отправить</button>
+		<button class="ghost  loading">Отправить</button>
+		<button class="ghost  small">Отправить</button>
+		<br>
+		<button class="disabled">Disabled</button>
+		<br>
+		<button class="bordered  red">Тест отправки</button>
+		<br>
+		<button class="clean  icon--add  big">Добавить</button>
+		<br>
+		<button class="clean  icon--add">Добавить</button>
+		<br>
+		<button class="clean  icon--add  small">Добавить</button>
+		<br>
+		<button class="clean  icon--trash  big">Удалить</button>
+		<br>
+		<button class="clean  icon--trash">Удалить</button>
+		<br>
+		<button class="clean  icon--trash  small">Удалить</button>
+		<section class="emoji-mart">
+			<button class="emoji-mart-anchor">Эмодзи</button>
+		</section>
+		<section class="emoji-mart-search">
+			<button class="emoji-mart-search-icon">Эмодзи</button>
+		</section>
+	</div>
+	<br>
+
+	<!-- Вкладки -->
+	<div class="tab-bar">
+		<div class="tab  active">Таб 1</div>
+		<div class="tab">Таб 2</div>
+		<div class="tab">Таб 3</div>
+	</div>
+	<div class="tab-bar  small">
+		<div class="tab  active">Таб 1</div>
+		<div class="tab">Таб 2</div>
+		<div class="tab">Таб 3</div>
+	</div>
+
+	<!-- Поля ввода -->
+	<input type="text" placeholder="Подсказка">
+	<input class="small" type="text" placeholder="Подсказка">
+	<input class="error" type="text" placeholder="Подсказка" value="Значение">
+	<input type="text" placeholder="Подсказка" disabled>
+	<br><br>
+
+	<!-- Свитчер -->
+	<div class="switcher">
+		<input type="radio" name="sw" id="option1">
+		<label for="option1">Выбор</label>
+		<input type="radio" name="sw" id="option2" checked>
+		<label for="option2">Выбор</label>
+	</div>
+	<div class="switcher  one-choice">
+		<input type="checkbox" id="one-option" checked>
+		<label for="one-option">Выбор</label>
+	</div>
+	<br>
+
+	<!-- Чекбоксы -->
+	<div>
+		<input type="checkbox" id="check1">
+		<label for="check1" class="label-checkbox">Чекбокс</label>
+		<input type="checkbox" id="check2" checked>
+		<label for="check2" class="label-checkbox">Чекбокс</label>
+		<input type="checkbox" id="check3" disabled>
+		<label for="check3" class="label-checkbox">Чекбокс</label>
+		<input type="checkbox" id="check4" disabled checked>
+		<label for="check4" class="label-checkbox">Чекбокс</label>
+		<input type="checkbox" id="check-round">
+		<label for="check-round" class="label-checkbox  round">Чекбокс</label>
+	</div>
+	<br>
+
+	<!-- Радио -->
+	<div class="radio">
+		<input type="radio" name="radio" id="radio1">
+		<label for="radio1" class="label-radio">Радио</label>
+		<input type="radio" name="radio" id="radio2" checked>
+		<label for="radio2" class="label-radio">Радио</label>
+	</div>
+
+	<div class="radio">
+		<input type="radio" name="radio-disabled" id="radio3" disabled>
+		<label for="radio3" class="label-radio">Радио</label>
+		<input type="radio" name="radio-disabled" id="radio4" checked disabled>
+		<label for="radio4" class="label-radio">Радио</label>
+	</div>
+	<br>
+	
+	<!-- Раскладка для Форм -->
+	<table class="form">
+		<tr>
+			<td>Название</td>
+			<td><input type="text" value="ScrumMeet"></td>
+		</tr>
+		<tr>
+			<td>Название</td>
+			<td><input type="text" placeholder="Подсказка" value=""></td>
+		</tr>
+		<tr>
+			<td>Сотрудники</td>
+			<td><div class="select__control">SELECT !</div></td>
+		</tr>
+	</table>
+	<br>
+
+	<!-- Метки -->
+	<div class="tags-block">
+		<div class="tag  success">Метка</div>
+		<div class="tag  error">Метка</div>
+		<div class="tag  primary">Метка</div>
+		<div class="tag">Метка</div>
+	</div>
+	<br><br>
+	<div class="tags-block">
+		<div class="tag  success">
+			Метка
+			<a href=""></a>
+		</div>
+		<div class="tag  error">
+			Метка
+			<a href=""></a>
+		</div>
+		<div class="tag  primary">
+			Метка
+			<a href=""></a>
+		</div>
+		<div class="tag">
+			Метка
+			<a href=""></a>
+		</div>
+	</div>
+	<br><br>
+
+	<!-- Alerts -->
+	<div class="alert">Инфо текст</div>
+	<div class="alert  error">Текст с ошибкой</div>
+	<div class="alert  success">Инфо текст</div>
+	<div class="alert  warning">Инфо текст</div>
+
+	<!-- Уведомления -->
+	<div>
+		<div class="notify">
+			<div class="title"></div>
+			<div class="text"></div>
+			<i class="icon--close"></i>
+		</div>
+		<div class="notify  error">
+			<div class="title"></div>
+			<div class="text"></div>
+			<i class="icon--close"></i>
+		</div>
+		<div class="notify  success">
+			<div class="title"></div>
+			<div class="text"></div>
+			<i class="icon--close"></i>
+		</div>
+		<div class="notify  warning">
+			<div class="title"></div>
+			<div class="text"></div>
+			<i class="icon--close"></i>
+		</div>
+	</div>
+
+</div>
+
+<!-- prev/next screen -->
+<a class="other-screens-link prev" href="html/popups/popup--process-create.html"></a>
+<a class="other-screens-link next disable" href="#"></a>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

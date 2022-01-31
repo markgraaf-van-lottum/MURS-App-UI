@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Создание процесса (Шаг 2)</title>
+	<base href="../../">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+<div class="main-container" id="root">
+	<!-- Sidebar -->
+	<aside>
+		<!-- Закругленные края -->
+		<div class="edge--top"></div>
+		<div class="edge--bottom"></div>
+
+		<nav class="menu-button"></nav>
+
+		<a class="logo"></a>
+
+		<!-- Меню -->
+		<nav class="menu">
+			<a href="#" class="with-submenu">Продажа</a>
+			<!-- подменю -->
+			<div class="submenu">
+				<a href="learning.html">Обучение</a>
+				<a href="rating.html" class="active">Рейтинг</a>
+				<a href="#">Тренировки</a>
+				<a href="#">Скрипты</a>
+			</div>
+			<a href="#" class="with-submenu">Вовлеченность</a>
+			<a href="#">Команда</a>
+			<a href="#">Сотрудники</a>
+			<a href="#">Клиенты</a>
+			<a href="#">Настройки</a>
+		</nav>
+
+		<div class="service-settings-progress-bar">
+			<div class="progress-bar__text">Вы завершили 1 шаг из 4 по настройке системы. Продолжайте в том же духе!</div>
+			<div class="progress-bar__bar">
+				<div class="progress-bar__fill" style="width: 25%;"></div>
+			</div>
+		</div>
+
+		<footer>
+			<a href="#" class="icon--logout">Выход</a>
+			<a href="#" class="goto-learning">?</a>
+		</footer>
+	</aside>
+
+	<!-- Основное содержимое -->
+	<main>
+		<div class="dashboard">
+			<div class="dashboard-header">
+				<h1>Процессы</h1>
+				<i class="icon--add-solid"></i>
+				
+				<input type="text" class="search-bar" value="" placeholder="Поиск">
+				<input type="text" value="{ФИЛЬТР процессов}">
+				<input type="text" value="{ФИЛЬТР статусов}">
+
+				<div class="switcher  switcher--processes-layout">
+					<input type="radio" name="sw" id="tile-view" checked>
+					<label for="tile-view"></label>
+					<input type="radio" name="sw" id="list-view">
+					<label for="list-view"></label>
+				</div>
+			</div>
+
+			<!-- Добавлять к dashboard-tiles класс table-list-view для смены раскладки -->
+			<div class="dashboard-tiles">
+
+				<div class="widget">
+					<a href="" class="widget-title">ScrumMeeting</a>
+					<div class="tags-block">
+						<div class="tag  success">Запущен</div>
+					</div>
+					<div class="widget-actions">
+						<i class="icon--copy"></i>
+						<i class="icon--edit"></i>
+						<i class="icon--trash"></i>
+					</div>
+				</div>
+
+				<div class="widget">
+					<a href="" class="widget-title">Performance Review Сабирянов Роберт</a>
+					<div class="tags-block">
+						<div class="tag  success">Запущен</div>
+					</div>
+					<div class="widget-actions">
+						<i class="icon--copy"></i>
+						<i class="icon--edit"></i>
+						<i class="icon--trash"></i>
+					</div>
+				</div>
+
+				<div class="widget">
+					<a href="" class="widget-title">ScrumMeeting</a>
+					<div class="tags-block">
+						<div class="tag  success">Запущен</div>
+					</div>
+					<div class="widget-actions">
+						<i class="icon--copy"></i>
+						<i class="icon--edit"></i>
+						<i class="icon--trash"></i>
+					</div>
+				</div>
+
+				<div class="widget">
+					<a href="" class="widget-title">ScrumMeeting</a>
+					<div class="tags-block">
+						<div class="tag  success">Запущен</div>
+					</div>
+					<div class="widget-actions">
+						<i class="icon--copy"></i>
+						<i class="icon--edit"></i>
+						<i class="icon--trash"></i>
+					</div>
+				</div>
+
+				<div class="widget">
+					<a href="" class="widget-title">Performance Review Сабирянов Роберт Performance Review Сабирянов Роберт </a>
+					<div class="tags-block">
+						<div class="tag  success">Запущен</div>
+					</div>
+					<div class="widget-actions">
+						<i class="icon--copy"></i>
+						<i class="icon--edit"></i>
+						<i class="icon--trash"></i>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</main>
+
+
+	<!-- СЛОЙ -->
+	<div class="page  page--steps  open">
+		<div class="page-close icon--close"></div>
+		
+		<div class="page-content">
+			
+			<!-- Заголовок слоя -->
+			<div class="page-header">
+				<h1 class="page-title">Performance Review</h1>
+			</div>
+
+			<p class="page-description  fs-big">Обзор эффективности работы, т.е. обсуждение результатов работы за прошедший период</p>
+			<div class="illustration"></div>
+
+			<!-- Для шага есть допклассы step--active и step--complete, которые управляют его внешним видом (в т.ч. скрывают внутренние элементы) -->
+
+			<!-- Шаг 1 -->
+			<div class="widget  step  step--complete">
+				<h3 class="widget-title">1. Кого оцениваем: Роберт Сабирянов</h3>
+				<p class="step-description">Выберите сотрудника для которого нужна оценка</p>
+			
+				<table class="form  no-labels">
+					<tr>
+						<!-- Селект .basic-single -->
+						<td><input type="text" class="basic-single" value="СЕЛЕКТ"></td>
+						<td><button>Далее</button></td>
+					</tr>
+				</table>
+			</div>
+
+			<!-- Шаг 2 -->
+			<div class="widget  step  step--active">
+				<h3 class="widget-title">2. Кто будет оценивать</h3>
+				<p>Выберите коллег которые должны дать оценку по сотруднику</p>
+				
+				<table class="form  no-labels">
+					<tr>
+						<!-- Селект .basic-single -->
+						<td><input type="text" class="basic-single" value="СЕЛЕКТ"></td>
+						<td><button>Далее</button></td>
+					</tr>
+				</table>
+				<button class="small  clean  icon--add  add">Добавить</button>
+			</div>
+
+			<!-- Шаг 3 -->
+			<div class="widget  step">
+				<h3 class="widget-title">3. Дата начала и повторяемость</h3>
+				<p class="step-description">Выберите дату когда запустить процесс, если дата не указан процесс начнется сразу.</p>
+
+				<table class="form  start-date_repeat">
+					<tr>
+						<td>Начало</td>
+						<!-- Селект .basic-single -->
+						<td><input type="text" class="basic-single" value="СЕЛЕКТ"></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Повторять</td>
+						<!-- Селект .basic-single -->
+						<td><input type="text" class="basic-single" value="СЕЛЕКТ"></td>
+						<td><button>Далее</button></td>
+					</tr>
+				</table>
+			</div>
+
+			<!-- Шаг 4 -->
+			<div class="widget  step">
+				<h3 class="widget-title">4. Запуск</h3>
+				<p class="step-description">Процесс готов для запуска. После запуска бот уведомит сотрудника о том, что ему нужно сделать. Коллегам бот предложит оценить его.</p>
+				<button>Сохранить и запустить</button>
+				<button class="ghost">Сохранить</button>
+			</div>
+
+	</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Обучение - Слой "Тренировки"</title>
+	<base href="../../../">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+<div class="main-container" id="root">
+
+	<!-- Sidebar -->
+	<aside>
+		<a href="#" class="logo"></a>
+
+		<!-- Меню -->
+		<nav class="menu">
+			<a href="#" class="with-submenu">Продажа</a>
+			<!-- подменю -->
+			<div class="submenu">
+				<a href="learning.html" class="active">Обучение</a>
+				<a href="rating.html">Рейтинг</a>
+				<a href="#">Тренировки</a>
+				<a href="#">Скрипты</a>
+			</div>
+			<a href="#" class="with-submenu">Вовлеченность</a>
+			<a href="#">Команда</a>
+			<a href="#">Сотрудники</a>
+			<a href="#">Клиенты</a>
+			<a href="#">Настройки</a>
+		</nav>
+
+		<a href="#" class="icon--logout">Выход</a>
+	</aside>
+
+	<!-- Основное содержимое -->
+	<main>
+		<div class="container-1440">
+			<h1>Обучение</h1>
+			
+			<div class="dashboard-tiles  learning">
+				<div class="tile">
+					<div class="tile-cover"></div>
+					<div class="tile-title">Техника ПТС</div>
+					<div class="tile-description">3 задания</div>
+				</div>
+				<div class="tile">
+					<div class="tile-cover"></div>
+					<div class="tile-title">Работа с возражениями "Дорого"</div>
+					<div class="tile-description">5 заданий</div>
+				</div>
+				<div class="tile">
+					<div class="tile-cover"></div>
+					<div class="tile-title">Продажи СПИН</div>
+					<div class="tile-description">11 заданий</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- СЛОЙ -->
+	<div class="page  open  page--learning">
+		<div class="page-close  icon--close"></div>
+		
+		<div class="page-content">
+
+			<div class="page-header">
+				<h1 class="page-title">Техника ПТС</h1>
+			</div>
+
+			<img src="https://www.benricho.org/Unchiku/edo-syokunin/07-1769syokuninzukushiutaawase/img-01/small/04.jpg" width="" height="" alt="">
+			<p class="fs-big">Мы обратили внимание, что люди, вовремя участвующие в активностях сервиса, также активны в мероприятиях компании, соблюдают договоренности и наиболее исполнительны. На основе этого создан рейтинг вовлеченности сотрудников.</p>
+
+			<div class="trainings-block">
+				<div class="item">
+					<button>Начать</button>
+					<div class="title">Тренировка по заданию 1</div>
+					<div class="description">Тренировка по заданию 1</div>
+				</div>
+				<div class="item">
+					<button>Начать</button>
+					<div class="title">Тренировка по заданию 2</div>
+					<div class="description">Тренировка по заданию 2</div>
+				</div>
+				<div class="item">
+					<button>Начать</button>
+					<div class="title">Тренировка по заданию 3</div>
+					<div class="description">Тренировка по заданию 3</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+	document.querySelector('.page-close').onclick = function () {document.querySelector('.page').style.display = "none";};
+</script>
+</body>
+</html>

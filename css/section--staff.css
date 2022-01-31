@@ -1,0 +1,98 @@
+/*      СОТРУДНИКИ / STAFF      */
+
+.table-list.staff {
+	margin-top: 20px;
+}
+
+.staff-list > button {
+	margin: 0 auto 0 20px;
+	vertical-align: 4px;
+}
+
+/*	Кнопка "Пригласить сотрудника/участника" */
+.staff-list .dashboard-header button.icon--telegram-filled {
+	margin: 0 20px;
+	flex-shrink: 0;
+}
+
+.staff-list .dashboard-header h1 {
+	margin-right: auto;
+}
+
+/*      Слой "Добавление сотрудника"    */
+.page--staff .form button {
+	display: block;
+}
+.page--staff .form td:first-child {
+	width: 160px;
+}
+.page--staff .basic-single {
+	display: inline-block;
+	width: 400px;
+}
+.page--staff i.delete-select {
+	position: absolute;
+	top: 8px;
+	margin-left: 12px;
+	color: #8D8F9A;
+	cursor: pointer;
+}
+
+/*      Слой "Просмотр сотрудника"  */
+.page--view h3 {
+	margin-top: 32px;
+}
+
+/*      Таблица-список Perfomance Review    */
+.table-perfomance-reviews {
+	margin-top: 12px;
+	border-collapse: separate;
+	border: 1px solid #eaedf4;
+	border-radius: 6px;
+}
+.table-perfomance-reviews tr > *:first-child {
+	text-align: justify;
+}
+.table-perfomance-reviews tr > *:nth-child(2) {
+	text-align: center;
+}
+.table-perfomance-reviews tr > *:last-child {
+	text-align: right;
+}
+.table-perfomance-reviews:not(.detailed-review) tbody {
+	cursor: pointer;
+}
+.table-perfomance-reviews tbody tr {
+	transition: background 0.15s;
+}
+.table-perfomance-reviews:not(.detailed-review) tbody tr:hover {
+	background: #f5f7fb;
+}
+.table-perfomance-reviews tr > * {
+	padding: 0 16px;
+}
+.table-perfomance-reviews th {
+	height: 32px;
+	line-height: 32px;
+}
+.table-perfomance-reviews td {
+	border-top: 1px solid #eaedf4;
+	padding-top: 10px;
+	padding-bottom: 8px;
+}
+
+/*      Таблица Perfomance Review (детально)    */
+.table-perfomance-reviews.detailed-review tr:first-child td {
+	border-top: none;
+}
+.table-perfomance-reviews.detailed-review {
+	margin-top: 0;
+}
+
+/* Группы клиентов */
+.bot-url .clean {
+	text-align: left;
+	line-height: 20px !important;
+    white-space: normal;
+    word-break: break-all;
+}

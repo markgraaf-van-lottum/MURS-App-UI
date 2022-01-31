@@ -1,0 +1,52 @@
+@media screen and (max-width: 768px) {
+	.menu-button {
+		position: absolute;
+		top: 24px;
+		left: 20px;
+		display: block;
+	}
+	aside {
+		position: relative;
+		font-size: 16px;
+		width: 100%;
+		height: 50px;
+		min-height: auto;
+		right: 0;
+		padding: 15px 30px;
+		white-space: nowrap;
+		overflow: hidden;
+		transition:	height .22s ease-in-out;
+	}
+	aside .logo {
+		/*-webkit-transform: translate3d(calc(-30px + 50vw - 78px/2), 0, 0);*/
+		/*transform: translate3d(calc(-30px + 50vw - 78px/2), 0, 0);*/
+		transition: -webkit-transform .22s ease-in-out;
+		transition: transform .22s ease-in-out;
+		transition: transform .22s ease-in-out,-webkit-transform .22s ease-in-out;
+	}
+	/* Открытие меню */
+	/*aside:hover,*/
+	aside.open {
+		position: absolute;
+		width: auto;
+		height: 100vh;
+		min-height: auto;
+		overflow: auto;
+		right: calc(100vw - 210px);
+	}
+	/*aside:hover .logo,*/
+	aside.open .logo {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+	/*aside:hover ~ main,*/
+	aside.open ~ main {
+		filter: blur(3px);
+		margin-top: 50px;
+	}
+	/*aside:hover .menu-button,*/
+	aside.open .menu-button {
+		display: none;
+	}
+	/* Открытие меню - END */
+}

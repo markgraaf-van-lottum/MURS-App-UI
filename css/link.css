@@ -1,0 +1,106 @@
+.link-page-bg,
+.link-body {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+.link-page-bg {
+	left: 0;
+	width: calc(100% - 620px);
+	background: url(../img/logo.svg) 32px 28px, url(../img/auth-page-bg.svg) 0 100%,
+		linear-gradient(to top left, #ecf1ff 0%, rgba(236, 241, 255, 0) 100%);
+	background-repeat: no-repeat;
+	background-size: auto 32px, auto, auto;
+}
+.link-body {
+	right: 0;
+	width: 630px;
+	min-height: 630px;
+	padding: 100px 24px;
+	background: #fff;
+	overflow: auto;/*для IE*/
+	overflow: overlay;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.link-content {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+.link-body h1 {
+	margin-bottom: 40px;
+}
+.link-body .ant-progress {
+	margin-bottom: 20px;
+}
+.link-body button {
+	flex-shrink: 0;
+}
+
+@media screen and (max-width: 1240px) {
+	.link-page-bg {
+		width: 60%;
+	}
+	.link-body {
+		width: 40%;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.link-page-bg {
+		width: calc(100% - 352px);
+		background-position-x: 32px, 40%;
+	}
+	.link-body {
+		width: auto;
+	}
+}
+@media screen and (max-width: 720px) {
+	.link-page-bg {
+		width: calc(100% - 308px);
+		background-size: auto 24px, auto, auto;
+	}
+	.link-body {
+		min-height: auto;
+	}
+	.link-body h1 {
+		font-size: 24px;
+	}
+}
+@media screen and (max-width: 600px) {
+	body {
+		-webkit-user-select: none;
+		-moz-user-select: none;
+	}
+	.link-page-bg {
+		display: none;
+	}
+	.link-body {
+		width: 100%;
+		background: #FFF url(../img/logo.svg) center 24px / auto 24px no-repeat;
+	}
+	.link-body h1 {
+		margin-bottom: 20px;
+	}
+	h1 {
+		font-size: 20px !important;
+	}
+}
+@media screen and (max-width: 350px) {
+	.link-body {
+		padding: 0;
+	}
+}

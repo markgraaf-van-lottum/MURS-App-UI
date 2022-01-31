@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Вход</title>
+	<base href="../../">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+<div class="main-container" id="root">
+
+	<div class="auth-page-bg"></div>
+	<div class="auth-form">
+		<div class="login-form">
+			<h1>Вход</h1>
+			
+			<table class="form">
+				<tr>
+					<td><input type="text" placeholder="E-mail"></td>
+				</tr>
+				<tr>
+					<td><input type="text" placeholder="Пароль"></td>
+				</tr>
+			</table>
+
+			<!-- каптча -->
+
+			<div class="recaptcha-wrapper" style="width: 304px;line-height: 76px;border: 1px solid;margin-top: 30px; text-align: center; background: #eee;">reCaptcha</div>
+			
+			<button class="login">Войти</button>
+			<button class="ghost">Восстановить пароль</button>
+			<a href="#" class="button  ghost">Зарегистрироваться</a>
+		</div>
+	</div>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</div>
+</body>
+</html>
